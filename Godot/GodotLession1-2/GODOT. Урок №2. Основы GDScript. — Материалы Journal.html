@@ -1,0 +1,1565 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html lang="ru-RU"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        #wpadminbar #wp-admin-bar-p404_free_top_button .ab-icon:before {
+            content: "\f103";
+            color: red;
+            top: 2px;
+        }
+    </style>
+<meta name="robots" content="noindex, nofollow">
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	
+<!-- Google Tag Manager for WordPress by gtm4wp.com -->
+<script type="text/javascript" integrity="sha384-x0ik2D45ZDEEEpYpEuDpmj05fY91P7EOZkgdKmq4dKL/ZAVcufJ+nULFtGn0HIZE" crossorigin="anonymous" async="" src="./GODOT. Урок №2. Основы GDScript. — Материалы Journal_files/analytics-browser-2.0.0-min.js.gz"></script><script data-cfasync="false" data-pagespeed-no-defer="">
+	var gtm4wp_datalayer_name = "dataLayer";
+	var dataLayer = dataLayer || [];
+</script>
+<!-- End Google Tag Manager for WordPress by gtm4wp.com --><title>GODOT. Урок №2. Основы GDScript. — Материалы Journal</title>
+<link rel="dns-prefetch" href="https://cdnjs.cloudflare.com/">
+<link rel="alternate" type="application/rss+xml" title="Материалы Journal » Лента" href="https://top-academy.site/feed/">
+<link rel="alternate" type="application/rss+xml" title="Материалы Journal » Лента комментариев" href="https://top-academy.site/comments/feed/">
+<script>
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/top-academy.site\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.8.3"}};
+/*! This file is auto-generated */
+!function(s,n){var o,i,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),a=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===a[t]})}function u(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);for(var n=e.getImageData(16,16,1,1),a=0;a<n.data.length;a++)if(0!==n.data[a])return!1;return!0}function f(e,t,n,a){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!a(e,"\ud83e\udedf")}return!1}function g(e,t,n,a){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):s.createElement("canvas"),o=r.getContext("2d",{willReadFrequently:!0}),i=(o.textBaseline="top",o.font="600 32px Arial",{});return e.forEach(function(e){i[e]=t(o,e,n,a)}),i}function t(e){var t=s.createElement("script");t.src=e,t.defer=!0,s.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",i=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){s.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+g.toString()+"("+[JSON.stringify(i),f.toString(),p.toString(),u.toString()].join(",")+"));",a=new Blob([e],{type:"text/javascript"}),r=new Worker(URL.createObjectURL(a),{name:"wpTestEmojiSupports"});return void(r.onmessage=function(e){c(n=e.data),r.terminate(),t(n)})}catch(e){}c(n=g(i,f,p,u))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+</script>
+<style id="wp-block-group-inline-css">
+.wp-block-group{box-sizing:border-box}:where(.wp-block-group.wp-block-group-is-layout-constrained){position:relative}
+</style>
+<style id="wp-block-group-theme-inline-css">
+:where(.wp-block-group.has-background){padding:1.25em 2.375em}
+</style>
+<style id="wp-block-post-title-inline-css">
+.wp-block-post-title{box-sizing:border-box;word-break:break-word}.wp-block-post-title :where(a){display:inline-block;font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;letter-spacing:inherit;line-height:inherit;text-decoration:inherit}
+</style>
+<style id="wp-block-button-inline-css">
+.wp-block-button__link{align-content:center;box-sizing:border-box;cursor:pointer;display:inline-block;height:100%;text-align:center;word-break:break-word}.wp-block-button__link.aligncenter{text-align:center}.wp-block-button__link.alignright{text-align:right}:where(.wp-block-button__link){border-radius:9999px;box-shadow:none;padding:calc(.667em + 2px) calc(1.333em + 2px);text-decoration:none}.wp-block-button[style*=text-decoration] .wp-block-button__link{text-decoration:inherit}.wp-block-buttons>.wp-block-button.has-custom-width{max-width:none}.wp-block-buttons>.wp-block-button.has-custom-width .wp-block-button__link{width:100%}.wp-block-buttons>.wp-block-button.has-custom-font-size .wp-block-button__link{font-size:inherit}.wp-block-buttons>.wp-block-button.wp-block-button__width-25{width:calc(25% - var(--wp--style--block-gap, .5em)*.75)}.wp-block-buttons>.wp-block-button.wp-block-button__width-50{width:calc(50% - var(--wp--style--block-gap, .5em)*.5)}.wp-block-buttons>.wp-block-button.wp-block-button__width-75{width:calc(75% - var(--wp--style--block-gap, .5em)*.25)}.wp-block-buttons>.wp-block-button.wp-block-button__width-100{flex-basis:100%;width:100%}.wp-block-buttons.is-vertical>.wp-block-button.wp-block-button__width-25{width:25%}.wp-block-buttons.is-vertical>.wp-block-button.wp-block-button__width-50{width:50%}.wp-block-buttons.is-vertical>.wp-block-button.wp-block-button__width-75{width:75%}.wp-block-button.is-style-squared,.wp-block-button__link.wp-block-button.is-style-squared{border-radius:0}.wp-block-button.no-border-radius,.wp-block-button__link.no-border-radius{border-radius:0!important}:root :where(.wp-block-button .wp-block-button__link.is-style-outline),:root :where(.wp-block-button.is-style-outline>.wp-block-button__link){border:2px solid;padding:.667em 1.333em}:root :where(.wp-block-button .wp-block-button__link.is-style-outline:not(.has-text-color)),:root :where(.wp-block-button.is-style-outline>.wp-block-button__link:not(.has-text-color)){color:currentColor}:root :where(.wp-block-button .wp-block-button__link.is-style-outline:not(.has-background)),:root :where(.wp-block-button.is-style-outline>.wp-block-button__link:not(.has-background)){background-color:initial;background-image:none}
+</style>
+<style id="wp-block-buttons-inline-css">
+.wp-block-buttons{box-sizing:border-box}.wp-block-buttons.is-vertical{flex-direction:column}.wp-block-buttons.is-vertical>.wp-block-button:last-child{margin-bottom:0}.wp-block-buttons>.wp-block-button{display:inline-block;margin:0}.wp-block-buttons.is-content-justification-left{justify-content:flex-start}.wp-block-buttons.is-content-justification-left.is-vertical{align-items:flex-start}.wp-block-buttons.is-content-justification-center{justify-content:center}.wp-block-buttons.is-content-justification-center.is-vertical{align-items:center}.wp-block-buttons.is-content-justification-right{justify-content:flex-end}.wp-block-buttons.is-content-justification-right.is-vertical{align-items:flex-end}.wp-block-buttons.is-content-justification-space-between{justify-content:space-between}.wp-block-buttons.aligncenter{text-align:center}.wp-block-buttons:not(.is-content-justification-space-between,.is-content-justification-right,.is-content-justification-left,.is-content-justification-center) .wp-block-button.aligncenter{margin-left:auto;margin-right:auto;width:100%}.wp-block-buttons[style*=text-decoration] .wp-block-button,.wp-block-buttons[style*=text-decoration] .wp-block-button__link{text-decoration:inherit}.wp-block-buttons.has-custom-font-size .wp-block-button__link{font-size:inherit}.wp-block-buttons .wp-block-button__link{width:100%}.wp-block-button.aligncenter{text-align:center}
+</style>
+<style id="wp-block-paragraph-inline-css">
+.is-small-text{font-size:.875em}.is-regular-text{font-size:1em}.is-large-text{font-size:2.25em}.is-larger-text{font-size:3em}.has-drop-cap:not(:focus):first-letter{float:left;font-size:8.4em;font-style:normal;font-weight:100;line-height:.68;margin:.05em .1em 0 0;text-transform:uppercase}body.rtl .has-drop-cap:not(:focus):first-letter{float:none;margin-left:.1em}p.has-drop-cap.has-background{overflow:hidden}:root :where(p.has-background){padding:1.25em 2.375em}:where(p.has-text-color:not(.has-link-color)) a{color:inherit}p.has-text-align-left[style*="writing-mode:vertical-lr"],p.has-text-align-right[style*="writing-mode:vertical-rl"]{rotate:180deg}
+</style>
+<style id="wp-block-columns-inline-css">
+.wp-block-columns{align-items:normal!important;box-sizing:border-box;display:flex;flex-wrap:wrap!important}@media (min-width:782px){.wp-block-columns{flex-wrap:nowrap!important}}.wp-block-columns.are-vertically-aligned-top{align-items:flex-start}.wp-block-columns.are-vertically-aligned-center{align-items:center}.wp-block-columns.are-vertically-aligned-bottom{align-items:flex-end}@media (max-width:781px){.wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column{flex-basis:100%!important}}@media (min-width:782px){.wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column{flex-basis:0;flex-grow:1}.wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column[style*=flex-basis]{flex-grow:0}}.wp-block-columns.is-not-stacked-on-mobile{flex-wrap:nowrap!important}.wp-block-columns.is-not-stacked-on-mobile>.wp-block-column{flex-basis:0;flex-grow:1}.wp-block-columns.is-not-stacked-on-mobile>.wp-block-column[style*=flex-basis]{flex-grow:0}:where(.wp-block-columns){margin-bottom:1.75em}:where(.wp-block-columns.has-background){padding:1.25em 2.375em}.wp-block-column{flex-grow:1;min-width:0;overflow-wrap:break-word;word-break:break-word}.wp-block-column.is-vertically-aligned-top{align-self:flex-start}.wp-block-column.is-vertically-aligned-center{align-self:center}.wp-block-column.is-vertically-aligned-bottom{align-self:flex-end}.wp-block-column.is-vertically-aligned-stretch{align-self:stretch}.wp-block-column.is-vertically-aligned-bottom,.wp-block-column.is-vertically-aligned-center,.wp-block-column.is-vertically-aligned-top{width:100%}
+</style>
+<link rel="stylesheet" id="elementor-frontend-css" href="./GODOT. Урок №2. Основы GDScript. — Материалы Journal_files/frontend.min.css" media="all">
+<link rel="stylesheet" id="elementor-post-54109-css" href="./GODOT. Урок №2. Основы GDScript. — Материалы Journal_files/post-54109.css" media="all">
+<style id="wp-block-post-content-inline-css">
+.wp-block-post-content{display:flow-root}
+</style>
+<link rel="stylesheet" id="prismjs_style-css" href="./GODOT. Урок №2. Основы GDScript. — Материалы Journal_files/code-highlight.min.css" media="">
+<link rel="stylesheet" id="widget-image-css" href="./GODOT. Урок №2. Основы GDScript. — Материалы Journal_files/widget-image.min.css" media="all">
+<link rel="stylesheet" id="widget-text-editor-css" href="./GODOT. Урок №2. Основы GDScript. — Материалы Journal_files/widget-text-editor.min.css" media="all">
+<link rel="stylesheet" id="widget-alert-css" href="./GODOT. Урок №2. Основы GDScript. — Материалы Journal_files/widget-alert.min.css" media="all">
+<link rel="stylesheet" id="widget-toggle-css" href="./GODOT. Урок №2. Основы GDScript. — Материалы Journal_files/widget-toggle.min.css" media="all">
+<style id="wp-emoji-styles-inline-css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<style id="wp-block-library-inline-css">
+:root{--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,161;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px;--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color)}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}.has-text-align-center{text-align:center}.has-text-align-left{text-align:left}.has-text-align-right{text-align:right}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-wrap:normal!important}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style*=border-top-color]){border-top-style:solid}html :where([style*=border-right-color]){border-right-style:solid}html :where([style*=border-bottom-color]){border-bottom-style:solid}html :where([style*=border-left-color]){border-left-style:solid}html :where([style*=border-width]){border-style:solid}html :where([style*=border-top-width]){border-top-style:solid}html :where([style*=border-right-width]){border-right-style:solid}html :where([style*=border-bottom-width]){border-bottom-style:solid}html :where([style*=border-left-width]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+</style>
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--background: #ffffff;--wp--preset--color--base: #434343;--wp--preset--color--primary: #9164ff;--wp--preset--color--secondary: #313131;--wp--preset--color--tertiary: #f3f6fb;--wp--preset--color--quaternary: #e7e7e7;--wp--preset--color--quinary: #cccccc;--wp--preset--color--senary: #2f2f2f;--wp--preset--color--transparent: transparent;--wp--preset--color--current-color: currentColor;--wp--preset--color--inherit: inherit;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 0.84rem;--wp--preset--font-size--medium: clamp(1.2rem, 1.2rem + ((1vw - 0.2rem) * 0.545), 1.5rem);--wp--preset--font-size--large: clamp(1.44rem, 1.44rem + ((1vw - 0.2rem) * 1.018), 2rem);--wp--preset--font-size--x-large: clamp(1.73rem, 1.73rem + ((1vw - 0.2rem) * 1.691), 2.66rem);--wp--preset--font-size--x-small: 0.63rem;--wp--preset--font-size--base: clamp(1rem, 1rem + ((1vw - 0.2rem) * 0.236), 1.13rem);--wp--preset--font-size--xx-large: clamp(2.07rem, 2.07rem + ((1vw - 0.2rem) * 2.691), 3.55rem);--wp--preset--font-size--xxx-large: clamp(2.49rem, 2.49rem + ((1vw - 0.2rem) * 4.073), 4.73rem);--wp--preset--font-size--xxxx-large: clamp(2.99rem, 2.99rem + ((1vw - 0.2rem) * 6.036), 6.31rem);--wp--preset--font-family--inter: Inter, sans-serif;--wp--preset--font-family--figtree: Figtree, sans-serif;--wp--preset--font-family--outfit: Outfit, sans-serif;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--spacing--xx-small: 8px;--wp--preset--spacing--x-small: clamp(0.75rem, 0.659rem + 0.45vw, 1rem);--wp--preset--spacing--small: clamp(1.125rem, 0.989rem + 0.68vw, 1.5rem);--wp--preset--spacing--medium: clamp(1.5rem, 1.318rem + 0.91vw, 2rem);--wp--preset--spacing--large: clamp(2.125rem, 1.807rem + 1.59vw, 3rem);--wp--preset--spacing--x-large: clamp(2.625rem, 2.125rem + 2.5vw, 4rem);--wp--preset--spacing--xx-large: clamp(3.688rem, 2.847rem + 4.2vw, 6rem);--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:root { --wp--style--global--content-size: 760px;--wp--style--global--wide-size: 1200px; }:where(body) { margin: 0; }.wp-site-blocks { padding-top: var(--wp--style--root--padding-top); padding-bottom: var(--wp--style--root--padding-bottom); }.has-global-padding { padding-right: var(--wp--style--root--padding-right); padding-left: var(--wp--style--root--padding-left); }.has-global-padding > .alignfull { margin-right: calc(var(--wp--style--root--padding-right) * -1); margin-left: calc(var(--wp--style--root--padding-left) * -1); }.has-global-padding :where(:not(.alignfull.is-layout-flow) > .has-global-padding:not(.wp-block-block, .alignfull)) { padding-right: 0; padding-left: 0; }.has-global-padding :where(:not(.alignfull.is-layout-flow) > .has-global-padding:not(.wp-block-block, .alignfull)) > .alignfull { margin-left: 0; margin-right: 0; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.wp-site-blocks) > * { margin-block-start: 24px; margin-block-end: 0; }:where(.wp-site-blocks) > :first-child { margin-block-start: 0; }:where(.wp-site-blocks) > :last-child { margin-block-end: 0; }:root { --wp--style--block-gap: 24px; }:root :where(.is-layout-flow) > :first-child{margin-block-start: 0;}:root :where(.is-layout-flow) > :last-child{margin-block-end: 0;}:root :where(.is-layout-flow) > *{margin-block-start: 24px;margin-block-end: 0;}:root :where(.is-layout-constrained) > :first-child{margin-block-start: 0;}:root :where(.is-layout-constrained) > :last-child{margin-block-end: 0;}:root :where(.is-layout-constrained) > *{margin-block-start: 24px;margin-block-end: 0;}:root :where(.is-layout-flex){gap: 24px;}:root :where(.is-layout-grid){gap: 24px;}.is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{background-color: var(--wp--preset--color--background);color: var(--wp--preset--color--base);font-family: var(--wp--preset--font-family--inter);font-size: var(--wp--preset--font-size--base);font-style: normal;font-weight: 400;line-height: 1.6;--wp--style--root--padding-top: 0px;--wp--style--root--padding-right: 20px;--wp--style--root--padding-bottom: 0px;--wp--style--root--padding-left: 20px;}a:where(:not(.wp-element-button)){color: var(--wp--preset--color--primary);text-decoration: underline;}h1, h2, h3, h4, h5, h6{color: var(--wp--preset--color--secondary);font-family: var(--wp--preset--font-family--inter);font-style: normal;font-weight: 500;}h1{font-size: var(--wp--preset--font-size--xx-large);line-height: 1.2;}h2{font-size: var(--wp--preset--font-size--x-large);line-height: 1.3;}h3{font-size: var(--wp--preset--font-size--large);line-height: 1.4;}h4{font-size: var(--wp--preset--font-size--medium);line-height: 1.5;}h5{font-size: var(--wp--preset--font-size--base);line-height: 1.6;}h6{font-size: var(--wp--preset--font-size--small);line-height: 1.6;}:root :where(.wp-element-button, .wp-block-button__link){background-color: var(--wp--preset--color--primary);border-width: 0;color: #fff;font-family: inherit;font-size: inherit;line-height: inherit;padding: calc(0.667em + 2px) calc(1.333em + 2px);text-decoration: none;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-background-color{color: var(--wp--preset--color--background) !important;}.has-base-color{color: var(--wp--preset--color--base) !important;}.has-primary-color{color: var(--wp--preset--color--primary) !important;}.has-secondary-color{color: var(--wp--preset--color--secondary) !important;}.has-tertiary-color{color: var(--wp--preset--color--tertiary) !important;}.has-quaternary-color{color: var(--wp--preset--color--quaternary) !important;}.has-quinary-color{color: var(--wp--preset--color--quinary) !important;}.has-senary-color{color: var(--wp--preset--color--senary) !important;}.has-transparent-color{color: var(--wp--preset--color--transparent) !important;}.has-current-color-color{color: var(--wp--preset--color--current-color) !important;}.has-inherit-color{color: var(--wp--preset--color--inherit) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-background-background-color{background-color: var(--wp--preset--color--background) !important;}.has-base-background-color{background-color: var(--wp--preset--color--base) !important;}.has-primary-background-color{background-color: var(--wp--preset--color--primary) !important;}.has-secondary-background-color{background-color: var(--wp--preset--color--secondary) !important;}.has-tertiary-background-color{background-color: var(--wp--preset--color--tertiary) !important;}.has-quaternary-background-color{background-color: var(--wp--preset--color--quaternary) !important;}.has-quinary-background-color{background-color: var(--wp--preset--color--quinary) !important;}.has-senary-background-color{background-color: var(--wp--preset--color--senary) !important;}.has-transparent-background-color{background-color: var(--wp--preset--color--transparent) !important;}.has-current-color-background-color{background-color: var(--wp--preset--color--current-color) !important;}.has-inherit-background-color{background-color: var(--wp--preset--color--inherit) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-background-border-color{border-color: var(--wp--preset--color--background) !important;}.has-base-border-color{border-color: var(--wp--preset--color--base) !important;}.has-primary-border-color{border-color: var(--wp--preset--color--primary) !important;}.has-secondary-border-color{border-color: var(--wp--preset--color--secondary) !important;}.has-tertiary-border-color{border-color: var(--wp--preset--color--tertiary) !important;}.has-quaternary-border-color{border-color: var(--wp--preset--color--quaternary) !important;}.has-quinary-border-color{border-color: var(--wp--preset--color--quinary) !important;}.has-senary-border-color{border-color: var(--wp--preset--color--senary) !important;}.has-transparent-border-color{border-color: var(--wp--preset--color--transparent) !important;}.has-current-color-border-color{border-color: var(--wp--preset--color--current-color) !important;}.has-inherit-border-color{border-color: var(--wp--preset--color--inherit) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}.has-x-small-font-size{font-size: var(--wp--preset--font-size--x-small) !important;}.has-base-font-size{font-size: var(--wp--preset--font-size--base) !important;}.has-xx-large-font-size{font-size: var(--wp--preset--font-size--xx-large) !important;}.has-xxx-large-font-size{font-size: var(--wp--preset--font-size--xxx-large) !important;}.has-xxxx-large-font-size{font-size: var(--wp--preset--font-size--xxxx-large) !important;}.has-inter-font-family{font-family: var(--wp--preset--font-family--inter) !important;}.has-figtree-font-family{font-family: var(--wp--preset--font-family--figtree) !important;}.has-outfit-font-family{font-family: var(--wp--preset--font-family--outfit) !important;}
+:root :where(.wp-block-button .wp-block-button__link){border-radius: 5px;line-height: 1;}
+:root :where(.wp-block-columns){background-color: var(--wp--preset--color--senary);border-radius: 12px;color: var(--wp--preset--color--background);margin-top: 0;margin-bottom: 0;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;}
+:root :where(.wp-block-columns a:where(:not(.wp-element-button))){color: var(--wp--preset--color--background);}
+:root :where(.wp-block-group){background-color: var(--wp--preset--color--background);border-radius: 0px;border-width: 0px;border-style: none;border-top-width: 0px;border-top-style: none;border-right-width: 0px;border-right-style: none;border-bottom-width: 0px;border-bottom-style: none;border-left-width: 0px;border-left-style: none;margin-top: 4px;margin-bottom: 4px;padding-top: var(--wp--preset--spacing--xx-large);padding-right: 0;padding-bottom: var(--wp--preset--spacing--xx-large);padding-left: 0;}:root :where(.wp-block-group-is-layout-flow) > :first-child{margin-block-start: 0;}:root :where(.wp-block-group-is-layout-flow) > :last-child{margin-block-end: 0;}:root :where(.wp-block-group-is-layout-flow) > *{margin-block-start: var(--wp--preset--spacing--xx-small);margin-block-end: 0;}:root :where(.wp-block-group-is-layout-constrained) > :first-child{margin-block-start: 0;}:root :where(.wp-block-group-is-layout-constrained) > :last-child{margin-block-end: 0;}:root :where(.wp-block-group-is-layout-constrained) > *{margin-block-start: var(--wp--preset--spacing--xx-small);margin-block-end: 0;}:root :where(.wp-block-group-is-layout-flex){gap: var(--wp--preset--spacing--xx-small);}:root :where(.wp-block-group-is-layout-grid){gap: var(--wp--preset--spacing--xx-small);}
+</style>
+<style id="core-block-supports-inline-css">
+.wp-elements-bdd0be4e23ec76bd3d035dab4f31e01e a:where(:not(.wp-element-button)){color:var(--wp--preset--color--tertiary);}.wp-elements-caae2e1386b1d9e9dfd57ba858ee841f a:where(:not(.wp-element-button)){color:var(--wp--preset--color--background);}.wp-elements-c8092fee579cd8a1b04ec2828d6dad99 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--tertiary);}.wp-elements-b424e7c098fab05db80adce2bb6f2c14 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--tertiary);}.wp-container-core-buttons-is-layout-fc4fd283{justify-content:flex-start;}.wp-elements-895abde6bab323b2650bd46872a133da a:where(:not(.wp-element-button)){color:var(--wp--preset--color--secondary);}.wp-elements-1a809d2ae42757cbb6421379f4bfc798 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--secondary);}.wp-container-core-group-is-layout-2b189bee{flex-wrap:nowrap;gap:0;justify-content:flex-start;align-items:flex-start;}.wp-container-core-columns-is-layout-2b736bf4{flex-wrap:nowrap;}.wp-elements-2732d0585476448cb3a5ad8e743b5777 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--primary);}.wp-container-core-post-content-is-layout-771028c0 > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width:70vw;margin-left:auto !important;margin-right:auto !important;}.wp-container-core-post-content-is-layout-771028c0 > .alignwide{max-width:70vw;}.wp-container-core-post-content-is-layout-771028c0 .alignfull{max-width:none;}.wp-container-core-post-content-is-layout-771028c0 > *{margin-block-start:0;margin-block-end:0;}.wp-container-core-post-content-is-layout-771028c0 > * + *{margin-block-start:0;margin-block-end:0;}.wp-container-core-group-is-layout-c726ba6a > .alignfull{margin-right:calc(var(--wp--preset--spacing--medium) * -1);margin-left:calc(var(--wp--preset--spacing--medium) * -1);}.wp-container-core-group-is-layout-5116318f{flex-wrap:nowrap;gap:0;flex-direction:column;align-items:center;}.wp-container-core-group-is-layout-e12ad8c4 > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width:80vw;margin-left:auto !important;margin-right:auto !important;}.wp-container-core-group-is-layout-e12ad8c4 > .alignwide{max-width:80vw;}.wp-container-core-group-is-layout-e12ad8c4 .alignfull{max-width:none;}.wp-container-core-group-is-layout-e12ad8c4 > .alignfull{margin-right:calc(var(--wp--preset--spacing--xx-large) * -1);margin-left:calc(var(--wp--preset--spacing--xx-large) * -1);}.wp-container-core-column-is-layout-7f0edc5e > .alignfull{margin-right:calc(0px * -1);margin-left:calc(var(--wp--preset--spacing--large) * -1);}.wp-container-core-columns-is-layout-28f84493{flex-wrap:nowrap;}
+</style>
+<style id="wp-block-template-skip-link-inline-css">
+
+		.skip-link.screen-reader-text {
+			border: 0;
+			clip-path: inset(50%);
+			height: 1px;
+			margin: -1px;
+			overflow: hidden;
+			padding: 0;
+			position: absolute !important;
+			width: 1px;
+			word-wrap: normal !important;
+		}
+
+		.skip-link.screen-reader-text:focus {
+			background-color: #eee;
+			clip-path: none;
+			color: #444;
+			display: block;
+			font-size: 1em;
+			height: auto;
+			left: 5px;
+			line-height: normal;
+			padding: 15px 23px 14px;
+			text-decoration: none;
+			top: 5px;
+			width: auto;
+			z-index: 100000;
+		}
+</style>
+<link rel="stylesheet" id="wp-postratings-css" href="./GODOT. Урок №2. Основы GDScript. — Материалы Journal_files/postratings-css.css" media="all">
+<link rel="stylesheet" id="jadro-style-css" href="./GODOT. Урок №2. Основы GDScript. — Материалы Journal_files/style.css" media="all">
+<link rel="stylesheet" id="elementor-icons-css" href="./GODOT. Урок №2. Основы GDScript. — Материалы Journal_files/elementor-icons.min.css" media="all">
+<link rel="stylesheet" id="elementor-post-115-css" href="./GODOT. Урок №2. Основы GDScript. — Материалы Journal_files/post-115.css" media="all">
+<link rel="stylesheet" id="elementor-pro-css" href="./GODOT. Урок №2. Основы GDScript. — Материалы Journal_files/frontend(1).min.css" media="all">
+<link rel="stylesheet" id="google-fonts-1-css" href="./GODOT. Урок №2. Основы GDScript. — Материалы Journal_files/css" media="all">
+<link rel="stylesheet" id="elementor-icons-shared-0-css" href="./GODOT. Урок №2. Основы GDScript. — Материалы Journal_files/fontawesome.min.css" media="all">
+<link rel="stylesheet" id="elementor-icons-fa-solid-css" href="./GODOT. Урок №2. Основы GDScript. — Материалы Journal_files/solid.min.css" media="all">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin=""><script src="./GODOT. Урок №2. Основы GDScript. — Материалы Journal_files/jquery.min.js.Без названия" id="jquery-core-js"></script>
+<script src="./GODOT. Урок №2. Основы GDScript. — Материалы Journal_files/jquery-migrate.min.js.Без названия" id="jquery-migrate-js"></script>
+<link rel="https://api.w.org/" href="https://top-academy.site/wp-json/"><link rel="alternate" title="JSON" type="application/json" href="https://top-academy.site/wp-json/wp/v2/pages/54109"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://top-academy.site/xmlrpc.php?rsd">
+<meta name="generator" content="WordPress 6.8.3">
+<link rel="canonical" href="https://top-academy.site/wvlfn8ygmrqggvqjryhhjjy1j512bbib/">
+<link rel="shortlink" href="https://top-academy.site/?p=54109">
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://top-academy.site/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ftop-academy.site%2Fwvlfn8ygmrqggvqjryhhjjy1j512bbib%2F">
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://top-academy.site/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ftop-academy.site%2Fwvlfn8ygmrqggvqjryhhjjy1j512bbib%2F&amp;format=xml">
+
+<!-- Google Tag Manager for WordPress by gtm4wp.com -->
+<!-- GTM Container placement set to off -->
+<script data-cfasync="false" data-pagespeed-no-defer="" type="text/javascript">
+	var dataLayer_content = {"pagePostType":"page","pagePostType2":"single-page","pagePostAuthor":"Матвей Ильзюгенев"};
+	dataLayer.push( dataLayer_content );
+</script>
+<script>
+	console.warn && console.warn("[GTM4WP] Google Tag Manager container code placement set to OFF !!!");
+	console.warn && console.warn("[GTM4WP] Data layer codes are active but GTM container must be loaded using custom coding !!!");
+</script>
+<!-- End Google Tag Manager for WordPress by gtm4wp.com --><meta name="generator" content="Elementor 3.27.2; features: additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap">
+			<style>
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
+					background-image: none !important;
+				}
+				@media screen and (max-height: 1024px) {
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+				@media screen and (max-height: 640px) {
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+			</style>
+			<style class="wp-fonts-local">
+@font-face{font-family:Inter;font-style:normal;font-weight:100 900;font-display:block;src:url('https://top-academy.site/wp-content/themes/jadro/assets/fonts/Inter-Variable.woff2') format('woff2');font-stretch:normal;}
+@font-face{font-family:Figtree;font-style:normal;font-weight:300 900;font-display:block;src:url('https://top-academy.site/wp-content/themes/jadro/assets/fonts/Figtree-Variable.woff2') format('woff2');font-stretch:normal;}
+@font-face{font-family:Outfit;font-style:normal;font-weight:100 900;font-display:block;src:url('https://top-academy.site/wp-content/themes/jadro/assets/fonts/Outfit-Variable.woff2') format('woff2');font-stretch:normal;}
+</style>
+<script src="./GODOT. Урок №2. Основы GDScript. — Материалы Journal_files/clipboard.min.js.Без названия"></script><script src="./GODOT. Урок №2. Основы GDScript. — Материалы Journal_files/wp-emoji-release.min.js.Без названия" defer=""></script></head>
+
+<body class="wp-singular page-template-default page page-id-54109 wp-embed-responsive wp-theme-jadro elementor-default elementor-kit-115 elementor-page elementor-page-54109 e--ua-blink e--ua-chrome e--ua-webkit" data-elementor-device-mode="desktop">
+
+<a class="skip-link screen-reader-text" id="wp-skip-link" href="https://top-academy.site/wvlfn8ygmrqggvqjryhhjjy1j512bbib/#wp--skip-link--target">Перейти к содержимому</a><div class="wp-site-blocks">
+<div class="wp-block-columns has-tertiary-color has-cyan-bluish-gray-background-color has-text-color has-background has-link-color wp-elements-bdd0be4e23ec76bd3d035dab4f31e01e is-layout-flex wp-container-core-columns-is-layout-28f84493 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:1%">
+<style>
+.sidebar{
+	top: 0px;
+  left: 0px;
+  box-shadow: 0 6px 15px rgb(0, 0, 0, 0.5);
+}
+
+.wp-site-blocks{
+	padding-left: 0px;
+}
+.sidebar-nav li img{
+  margin-left:10px;
+  height:20px;
+  width:20px;
+}
+.sidebar:hover li img{
+  padding-right:10px;
+
+}
+
+.sidebar:hover .mystat-img{
+   height:60px;
+
+}
+.sidebar .mystat-img{
+   height:0px;
+
+}
+
+
+
+.sidebar{
+    min-width: 60px;
+    max-width: 60px;
+    background-image: url(https://journal.top-academy.ru/assets/images/sidebar-bg.jpg);
+    background-size: auto 100%;
+    background-position: 50% 25%;
+    color: #fff;
+    transition: all 0.3s;
+    height: 100%;
+    position: fixed;
+    z-index: 1049;
+    text-align: center;
+}
+.sidebar-parent-block .sidebar .sidebar-content {
+    background: rgba(33, 51, 71, 0.8);
+    height: 100%;
+}
+.sidebar-parent-block .sidebar:hover {
+    min-width: 260px;
+    max-width: 320px;
+}
+.sidebar-parent-block .sidebar .sidebar-header {
+    padding: 20px 10px;
+    height: 80px;
+}
+.sidebar-parent-block .sidebar:hover .sidebar-header .arrow-navigation {
+    position: absolute;
+    top: 25px;
+    right: 0;
+    cursor: pointer;
+    text-align: left;
+    padding: 10px 20px;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+  -webkit-mask-size: cover;
+}
+.sidebar-parent-block .sidebar .sidebar-header .arrow-navigation {
+    position: static;
+    text-align: center;
+    cursor: pointer;
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -o-transform: rotate(0);
+    transform: rotate(0);
+}
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+.sidebar-parent-block .sidebar:hover .sidebar-header a {
+    padding: 25px 0 15px;
+}
+.sidebar-parent-block .sidebar .sidebar-nav {
+    margin: 0px;
+    padding: 0px;
+    margin-top: 0px;
+}
+.sidebar-parent-block .sidebar:hover ul.sidebar-nav {
+    margin: 0px;
+    padding: 0 16px;
+    margin-top: 16px;
+}
+.sidebar-parent-block .sidebar:hover ul.sidebar-nav li {
+    display:flex;
+    margin-bottom: 0;
+    padding: 0 0 0 0;
+    text-align: left;
+}
+.sidebar-parent-block .sidebar ul.sidebar-nav li {
+   margin-bottom: 0px;
+    height: 49px;
+    padding-right: 0px;
+   margin-bottom: 0px;
+    padding: 0;
+    margin-bottom: 0;
+    line-height: 18px;
+    font-size: 18px;
+    position: relative;
+    list-style-type: none;
+}
+.sidebar-parent-block .sidebar:hover .sidebar-nav:hover li {
+    color: #fff;
+}
+
+.sidebar-parent-block .sidebar:hover ul.sidebar-nav li a {
+    color: #e7e7e7;
+    text-align: left;
+    position: relative;
+    font-size: 20px;
+    padding-top:0px;
+    text-decoration:none;
+}
+.sidebar-parent-block .sidebar ul.sidebar-nav li a {
+    display: inline-block;
+    font-size: 0;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+.sidebar-parent-block .sidebar ul.sidebar-nav li .side-text {
+    white-space: nowrap;
+    overflow: hidden;
+}
+.sidebar-parent-block .sidebar:hover ul.sidebar-nav li .close-hover {
+    display: none;
+}
+.sidebar-parent-block .sidebar ul.sidebar-nav li a .close-hover {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    min-width: 220px;
+    padding: 15.5px 20px;
+    background: #495767;
+    z-index: 9999;
+    display: none;
+}
+.sidebar-parent-block .sidebar {
+    min-width: 60px;
+    max-width: 60px;
+    background-image: url(https://journal.top-academy.ru/assets/images/sidebar-bg.jpg);
+    background-size: auto 100%;
+    background-position: 50% 25%;
+    color: #fff;
+    transition: all 0.3s;
+    height: 100%;
+    position: fixed;
+    z-index: 1049;
+    text-align: center;
+}
+.sidebar-parent-block .sidebar:hover .sidebar-header {
+    position: relative;
+    padding: 20px 10px;
+
+}
+.sidebar-parent-block .sidebar:hover ul.sidebar-nav {
+    margin: 0;
+    padding: 0 20px;
+    margin-top: 16px;
+}
+.sidebar-parent-block .sidebar:hover ul.sidebar-nav li {
+    margin-bottom: 0px;
+    padding: 0 40px 0 0;
+    text-align: left;
+    line-height: 20px;
+    list-style-type: none;
+}
+.sidebar-parent-block .sidebar ul.sidebar-nav li {
+    padding: 0;
+    margin-bottom: 0;
+    line-height: 18px;
+    font-size: 18px;
+    width:60px;
+    height:60px;
+    position: relative;
+    list-style-type: none;
+}
+</style>
+
+<div class="sidebar-parent-block">
+<nav class="sidebar">
+<div class="sidebar-content">
+<div class="sidebar-header">
+<div class="arrow-navigation"><img decoding="async" alt="" src="./GODOT. Урок №2. Основы GDScript. — Материалы Journal_files/right.png"></div>
+<p><a href="javascript:void(0)"><img decoding="async" alt="" class="mystat-img" src="./GODOT. Урок №2. Основы GDScript. — Материалы Journal_files/logo.png" style=""></a>
+    </p></div>
+<div>
+<ul class="sidebar-nav open-sidebar-nav">
+        <!----><p></p>
+<li class="main-item">
+          <img decoding="async" src="./GODOT. Урок №2. Основы GDScript. — Материалы Journal_files/main.svg" style="filter: invert(1);">
+          <!----><a routerlinkactive="active" href="https://journal.top-academy.ru/ru/main/dashboard/page" class="active"><span class="side-text">Главная</span>
+            <!----><p></p>
+<div class="close-hover"> Главная </div>
+</a><p><a routerlinkactive="active" href="https://journal.top-academy.ru/ru/main/dashboard/page" class="active">  
+             </a>
+          <!---->
+        </p></li>
+<li class="schedule-item">
+          <img decoding="async" src="./GODOT. Урок №2. Основы GDScript. — Материалы Journal_files/calendar.svg">
+          <!----><a routerlinkactive="active" href="https://journal.top-academy.ru/ru/main/schedule/page"><span class="side-text">Расписание</span>
+            <!----><p></p>
+<div class="close-hover"> Расписание </div>
+</a><p><a routerlinkactive="active" href="https://journal.top-academy.ru/ru/main/schedule/page">          </a>
+          <!---->
+        </p></li>
+<li class="progress-item">
+          <img decoding="async" src="./GODOT. Урок №2. Основы GDScript. — Материалы Journal_files/line.svg" <!----=""><a routerlinkactive="active" href="https://journal.top-academy.ru/ru/main/progress/page"><span class="side-text">Оценки</span>
+            <!----><p></p>
+<div class="close-hover"> Оценки </div>
+</a><p><a routerlinkactive="active" href="https://journal.top-academy.ru/ru/main/progress/page">          </a>
+          <!---->
+        </p></li>
+<li class="homeworks-item">
+         <img decoding="async" src="./GODOT. Урок №2. Основы GDScript. — Материалы Journal_files/tasks.svg" <!----=""><a routerlinkactive="active" href="https://journal.top-academy.ru/ru/main/homework/page"><span class="side-text">ДЗ</span>
+            <!----><p></p>
+<div class="close-hover"> ДЗ </div>
+</a><p><a routerlinkactive="active" href="https://journal.top-academy.ru/ru/main/homework/page">          </a></p>
+</li>
+<li class="library-item">
+           <img decoding="async" src="./GODOT. Урок №2. Основы GDScript. — Материалы Journal_files/books.svg">
+          <!----><a routerlinkactive="active" href="https://journal.top-academy.ru/ru/main/library/page"><span class="side-text">Учебные материалы</span>
+            <!----><p></p>
+<div class="close-hover"> Учебные материалы </div>
+</a><p><a routerlinkactive="active" href="https://journal.top-academy.ru/ru/main/library/page">          </a>
+          <!---->
+        </p></li>
+<li class="news-item">
+          <img decoding="async" src="./GODOT. Урок №2. Основы GDScript. — Материалы Journal_files/message.svg" <!----=""><a routerlinkactive="active" href="https://journal.top-academy.ru/ru/main/news/page"><span class="side-text">Объявления</span>
+            <!----><span class="badge-counter">  </span><p></p>
+<div class="close-hover"> Объявления </div>
+</a><p><a routerlinkactive="active" href="https://journal.top-academy.ru/ru/main/news/page">          </a></p>
+</li>
+<li class="rewards-item">
+          <img decoding="async" src="./GODOT. Урок №2. Основы GDScript. — Материалы Journal_files/star.svg">
+          <!----><a routerlinkactive="active" href="https://journal.top-academy.ru/ru/main/rewards/page"><span class="side-text">Награды</span>
+            <!----><p></p>
+<div class="close-hover"> Награды </div>
+</a><p><a routerlinkactive="active" href="https://journal.top-academy.ru/ru/main/rewards/page">          </a>
+          <!---->
+        </p></li>
+<li class="feedback-item">
+          <img decoding="async" src="./GODOT. Урок №2. Основы GDScript. — Материалы Journal_files/pen.svg">
+          <!----><a routerlinkactive="active" href="https://journal.top-academy.ru/ru/main/feedback/page"><span class="side-text">Отзывы о студенте</span>
+            <!----><p></p>
+<div class="close-hover"> Отзывы о студенте </div>
+</a><p><a routerlinkactive="active" href="https://journal.top-academy.ru/ru/main/feedback/page">          </a>
+          <!---->
+        </p></li>
+<li class="payment-item">
+          <img decoding="async" src="./GODOT. Урок №2. Основы GDScript. — Материалы Journal_files/card.svg">
+          <!----><a routerlinkactive="active" href="https://journal.top-academy.ru/ru/main/payment/page"><span class="side-text">Оплата</span>
+            <!----><p></p>
+<div class="close-hover"> Оплата </div>
+</a><p><a routerlinkactive="active" href="https://journal.top-academy.ru/ru/main/payment/page">          </a>
+          <!---->
+        </p></li>
+<li class="profile-item">
+          <img decoding="async" src="./GODOT. Урок №2. Основы GDScript. — Материалы Journal_files/profile.svg">
+          <!----><a routerlinkactive="active" href="https://journal.top-academy.ru/ru/main/settings/page"><span class="side-text">Личный кабинет</span>
+            <!----><p></p>
+<div class="close-hover"> Личный кабинет </div>
+</a><p><a routerlinkactive="active" href="https://journal.top-academy.ru/ru/main/settings/page">          </a>
+          <!---->
+        </p></li>
+
+<li class="faq-item">
+          <img decoding="async" src="./GODOT. Урок №2. Основы GDScript. — Материалы Journal_files/question.svg">
+          <!----><a routerlinkactive="active" href="https://journal.top-academy.ru/ru/main/faq/page"><span class="side-text">F.A.Q.</span>
+            <!----><p></p>
+<div class="close-hover"> F.A.Q. </div>
+</a><p><a routerlinkactive="active" href="https://journal.top-academy.ru/ru/main/faq/page">          </a>
+          <!---->
+        </p></li>
+<li class="contacts-item">
+          <img decoding="async" src="./GODOT. Урок №2. Основы GDScript. — Материалы Journal_files/pin.svg" style="filter: invert(1);">
+          <!----><a routerlinkactive="active" href="https://journal.top-academy.ru/ru/main/contacts/page"><span class="side-text">Администрация</span>
+            <!----><p></p>
+<div class="close-hover"> Администрация </div>
+</a><p><a routerlinkactive="active" href="https://journal.top-academy.ru/ru/main/contacts/page">          </a>
+          <!---->
+        </p></li>
+<li class="signal-item">
+          <img decoding="async" src="./GODOT. Урок №2. Основы GDScript. — Материалы Journal_files/signal.svg">
+          <!----><a routerlinkactive="active" href="https://journal.top-academy.ru/ru/main/signal/page"><span class="side-text">Обращения</span>
+            <!----><p></p>
+<div class="close-hover"> Обращения </div>
+</a><p><a routerlinkactive="active" href="https://journal.top-academy.ru/ru/main/signal/page">          </a>
+          <!---->
+        </p></li>
+
+
+</ul>
+<div class="shop-nav-link"><a href="https://journal.top-academy.ru/ru/main/market/page"><p></p>
+<div class="shop-image"></div>
+</a><p><a href="https://journal.top-academy.ru/ru/main/market/page">        </a></p></div>
+<p></p></div>
+<p></p></div>
+</nav>
+</div>
+</div>
+
+
+
+<div class="wp-block-column has-global-padding is-layout-constrained wp-container-core-column-is-layout-7f0edc5e wp-block-column-is-layout-constrained" style="padding-right:0;padding-left:var(--wp--preset--spacing--large);flex-basis:99%"><script type="text/javascript">
+!function(){"use strict";!function(e,t){var n=e.amplitude||{_q:[],_iq:{}};if(n.invoked)e.console&&console.error&&console.error("Amplitude snippet has been loaded.");else{var r=function(e,t){e.prototype[t]=function(){return this._q.push({name:t,args:Array.prototype.slice.call(arguments,0)}),this}},s=function(e,t,n){return function(r){e._q.push({name:t,args:Array.prototype.slice.call(n,0),resolve:r})}},o=function(e,t,n){e[t]=function(){if(n)return{promise:new Promise(s(e,t,Array.prototype.slice.call(arguments)))}}},i=function(e){for(var t=0;t<m.length;t++)o(e,m[t],!1);for(var n=0;n<g.length;n++)o(e,g[n],!0)};n.invoked=!0;var u=t.createElement("script");u.type="text/javascript",u.integrity="sha384-x0ik2D45ZDEEEpYpEuDpmj05fY91P7EOZkgdKmq4dKL/ZAVcufJ+nULFtGn0HIZE",u.crossOrigin="anonymous",u.async=!0,u.src="https://cdn.amplitude.com/libs/analytics-browser-2.0.0-min.js.gz",u.onload=function(){e.amplitude.runQueuedFunctions||console.log("[Amplitude] Error: could not load SDK")};var a=t.getElementsByTagName("script")[0];a.parentNode.insertBefore(u,a);for(var c=function(){return this._q=[],this},p=["add","append","clearAll","prepend","set","setOnce","unset","preInsert","postInsert","remove","getUserProperties"],l=0;l<p.length;l++)r(c,p[l]);n.Identify=c;for(var d=function(){return this._q=[],this},f=["getEventProperties","setProductId","setQuantity","setPrice","setRevenue","setRevenueType","setEventProperties"],v=0;v<f.length;v++)r(d,f[v]);n.Revenue=d;var m=["getDeviceId","setDeviceId","getSessionId","setSessionId","getUserId","setUserId","setOptOut","setTransport","reset","extendSession"],g=["init","add","remove","track","logEvent","identify","groupIdentify","setGroup","revenue","flush"];i(n),n.createInstance=function(e){return n._iq[e]={_q:[]},i(n._iq[e]),n._iq[e]},e.amplitude=n}}(window,document)}();
+
+amplitude.init('374706fa2bef498fc0787357d2e19000');
+</script>
+
+<style>
+  .klnk{
+    padding-right: 0px;
+    background: url(https://journal.top-academy.ru/assets/images/sidebar-bg.jpg);
+    border-radius: 12px;
+    background-position: 50% 25%;
+    padding-left: 0px;
+  }
+  body{
+    --wp--style--global--content-size:1300px;
+  }
+  a{
+    color:black;
+  }
+  .zag{
+    margin-left: -40px;
+    margin-right: -40px;
+  }
+  .zag2{
+    text-align: center;
+  }
+</style>
+
+
+<div class="wp-block-group has-transparent-background-color has-background is-layout-flow wp-block-group-is-layout-flow" style="border-radius:12px;margin-top:0;margin-bottom:0;padding-top:0;padding-right:var(--wp--preset--spacing--xx-large);padding-bottom:0;padding-left:var(--wp--preset--spacing--xx-large)"></div>
+
+
+
+<div class="wp-block-group has-transparent-background-color has-background has-global-padding is-layout-constrained wp-container-core-group-is-layout-e12ad8c4 wp-block-group-is-layout-constrained" style="padding-top:var(--wp--preset--spacing--small);padding-right:var(--wp--preset--spacing--xx-large);padding-bottom:var(--wp--preset--spacing--small);padding-left:var(--wp--preset--spacing--xx-large)">
+<div class="wp-block-group has-transparent-background-color has-background is-layout-flow wp-block-group-is-layout-flow" style="border-radius:12px;margin-top:var(--wp--preset--spacing--x-small);margin-bottom:var(--wp--preset--spacing--x-small);padding-top:0;padding-right:var(--wp--preset--spacing--xx-large);padding-bottom:0;padding-left:var(--wp--preset--spacing--xx-large)">
+<div class="wp-block-group zag2 has-background is-layout-flow wp-block-group-is-layout-flow" style="border-radius:12px;background-color:#6e63ff;margin-top:0;margin-bottom:0;padding-top:0;padding-bottom:0"><h2 style="text-transform:uppercase; padding-right:var(--wp--preset--spacing--medium);padding-left:var(--wp--preset--spacing--medium);padding-top:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--medium);margin-bottom:0px;margin-top:0px;margin-left:0px;margin-right:0px;" class="has-link-color zag wp-elements-caae2e1386b1d9e9dfd57ba858ee841f wp-block-post-title has-text-color has-background-color has-background has-transparent-background-color has-large-font-size">GODOT. Урок №2. Основы GDScript.</h2></div>
+</div>
+
+
+
+<main class="wp-block-group has-tertiary-color has-transparent-background-color has-text-color has-background has-link-color wp-elements-c8092fee579cd8a1b04ec2828d6dad99 is-vertical is-content-justification-center is-nowrap is-layout-flex wp-container-core-group-is-layout-5116318f wp-block-group-is-layout-flex" style="border-style:none;border-width:0px;border-radius:15px;margin-top:0px;margin-bottom:0px;padding-top:var(--wp--preset--spacing--x-small);padding-right:var(--wp--preset--spacing--xx-large);padding-bottom:var(--wp--preset--spacing--x-small);padding-left:var(--wp--preset--spacing--xx-large)" id="wp--skip-link--target">
+<div class="wp-block-group has-global-padding is-layout-constrained wp-container-core-group-is-layout-c726ba6a wp-block-group-is-layout-constrained" style="border-radius:12px;padding-top:0;padding-right:var(--wp--preset--spacing--medium);padding-bottom:0;padding-left:var(--wp--preset--spacing--medium)">
+<div class="wp-block-columns is-not-stacked-on-mobile has-tertiary-color has-transparent-background-color has-text-color has-background has-link-color wp-elements-b424e7c098fab05db80adce2bb6f2c14 is-layout-flex wp-container-core-columns-is-layout-2b736bf4 wp-block-columns-is-layout-flex" style="padding-top:var(--wp--preset--spacing--small);padding-right:var(--wp--preset--spacing--xx-small);padding-bottom:0">
+<div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow">
+<div class="wp-block-buttons is-content-justification-left is-layout-flex wp-container-core-buttons-is-layout-fc4fd283 wp-block-buttons-is-layout-flex">
+<div class="wp-block-button has-custom-width wp-block-button__width-100"><a class="wp-block-button__link has-tertiary-background-color has-text-color has-background has-link-color has-border-color wp-element-button" href="https://journal.top-academy.ru/ru/main/library/page/index/2" style="border-color:#6e63ff;border-width:4px;border-radius:12px;color:#6e63ff">Учебные материалы</a></div>
+</div>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:20%"></div>
+
+
+
+<div class="wp-block-column is-vertically-aligned-center has-secondary-color has-text-color has-link-color wp-elements-895abde6bab323b2650bd46872a133da is-layout-flow wp-block-column-is-layout-flow">
+<p class="has-text-align-left has-secondary-color has-text-color has-link-color wp-elements-1a809d2ae42757cbb6421379f4bfc798" style="margin-top:0;margin-bottom:0;padding-top:0;padding-bottom:0"></p>
+
+
+
+<div class="wp-block-group is-content-justification-left is-nowrap is-layout-flex wp-container-core-group-is-layout-2b189bee wp-block-group-is-layout-flex" style="padding-top:0;padding-bottom:0"></div>
+</div>
+</div>
+
+
+<div style="min-height:0px;" class="entry-content wp-elements-2732d0585476448cb3a5ad8e743b5777 wp-block-post-content has-text-color has-current-color-color has-background has-transparent-background-color has-base-font-size has-global-padding is-layout-constrained wp-container-core-post-content-is-layout-771028c0 wp-block-post-content-is-layout-constrained">		<div data-elementor-type="wp-page" data-elementor-id="54109" class="elementor elementor-54109">
+						<section class="elementor-section elementor-top-section elementor-element elementor-element-3ad82fe9 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="3ad82fe9" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-401a3a56" data-id="401a3a56" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-bc77639 elementor-widget elementor-widget-text-editor" data-id="bc77639" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Здравствуйте, юные разработчики игр! Рад снова всех видеть. Открывайте свои проекты, и пока они загружаются, давайте быстро проверим, все ли мы помним с прошлого раза.</p><hr><h3><span style="color: #6e36d6;"><strong>Блиц-опрос!</strong></span></h3>								</div>
+				</div>
+				<div class="elementor-element elementor-element-46653f7a elementor-widget elementor-widget-toggle" data-id="46653f7a" data-element_type="widget" data-widget_type="toggle.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-toggle">
+							<div class="elementor-toggle-item">
+					<div id="elementor-tab-title-1181" class="elementor-tab-title" data-tab="1" role="button" aria-controls="elementor-tab-content-1181" aria-expanded="false">
+												<span class="elementor-toggle-icon elementor-toggle-icon-left" aria-hidden="true">
+															<span class="elementor-toggle-icon-closed"><i class="fas fa-caret-right"></i></span>
+								<span class="elementor-toggle-icon-opened"><i class="elementor-toggle-icon-opened fas fa-caret-up"></i></span>
+													</span>
+												<a class="elementor-toggle-title" tabindex="0">1. Как называется главный строительный кубик в Godot, из которого состоит всё в игре? </a>
+					</div>
+
+					<div id="elementor-tab-content-1181" class="elementor-tab-content elementor-clearfix" data-tab="1" role="region" aria-labelledby="elementor-tab-title-1181"><p><strong><em>Правильный ответ:</em></strong><em> <br>Узел/Нода<br></em></p></div>
+				</div>
+							<div class="elementor-toggle-item">
+					<div id="elementor-tab-title-1182" class="elementor-tab-title" data-tab="2" role="button" aria-controls="elementor-tab-content-1182" aria-expanded="false">
+												<span class="elementor-toggle-icon elementor-toggle-icon-left" aria-hidden="true">
+															<span class="elementor-toggle-icon-closed"><i class="fas fa-caret-right"></i></span>
+								<span class="elementor-toggle-icon-opened"><i class="elementor-toggle-icon-opened fas fa-caret-up"></i></span>
+													</span>
+												<a class="elementor-toggle-title" tabindex="0">2. Что такое Сцена? </a>
+					</div>
+
+					<div id="elementor-tab-content-1182" class="elementor-tab-content elementor-clearfix" data-tab="2" role="region" aria-labelledby="elementor-tab-title-1182"><p><strong><em>Правильный ответ:</em></strong><em><br>дерево узлов — наш уровень или персонаж<br></em></p></div>
+				</div>
+							<div class="elementor-toggle-item">
+					<div id="elementor-tab-title-1183" class="elementor-tab-title" data-tab="3" role="button" aria-controls="elementor-tab-content-1183" aria-expanded="false">
+												<span class="elementor-toggle-icon elementor-toggle-icon-left" aria-hidden="true">
+															<span class="elementor-toggle-icon-closed"><i class="fas fa-caret-right"></i></span>
+								<span class="elementor-toggle-icon-opened"><i class="elementor-toggle-icon-opened fas fa-caret-up"></i></span>
+													</span>
+												<a class="elementor-toggle-title" tabindex="0">3. В каком окне мы меняли размер и поворот иконки Godot? </a>
+					</div>
+
+					<div id="elementor-tab-content-1183" class="elementor-tab-content elementor-clearfix" data-tab="3" role="region" aria-labelledby="elementor-tab-title-1183"><p><strong><em>Правильный ответ:</em></strong><em><br>Инспектор<br></em></p></div>
+				</div>
+							<div class="elementor-toggle-item">
+					<div id="elementor-tab-title-1184" class="elementor-tab-title" data-tab="4" role="button" aria-controls="elementor-tab-content-1184" aria-expanded="false">
+												<span class="elementor-toggle-icon elementor-toggle-icon-left" aria-hidden="true">
+															<span class="elementor-toggle-icon-closed"><i class="fas fa-caret-right"></i></span>
+								<span class="elementor-toggle-icon-opened"><i class="elementor-toggle-icon-opened fas fa-caret-up"></i></span>
+													</span>
+												<a class="elementor-toggle-title" tabindex="0">4. С помощью какого специального узла мы рисовали нашу карту? </a>
+					</div>
+
+					<div id="elementor-tab-content-1184" class="elementor-tab-content elementor-clearfix" data-tab="4" role="region" aria-labelledby="elementor-tab-title-1184"><p><strong><em>Правильный ответ:</em></strong><em><br>TileMapLayer/Карта тайлов<br></em></p></div>
+				</div>
+							<div class="elementor-toggle-item">
+					<div id="elementor-tab-title-1185" class="elementor-tab-title" data-tab="5" role="button" aria-controls="elementor-tab-content-1185" aria-expanded="false">
+												<span class="elementor-toggle-icon elementor-toggle-icon-left" aria-hidden="true">
+															<span class="elementor-toggle-icon-closed"><i class="fas fa-caret-right"></i></span>
+								<span class="elementor-toggle-icon-opened"><i class="elementor-toggle-icon-opened fas fa-caret-up"></i></span>
+													</span>
+												<a class="elementor-toggle-title" tabindex="0">5. Какое волшебное сочетание клавиш сохраняет нашу работу? </a>
+					</div>
+
+					<div id="elementor-tab-content-1185" class="elementor-tab-content elementor-clearfix" data-tab="5" role="region" aria-labelledby="elementor-tab-title-1185"><p><strong><em>Правильный ответ:</em></strong><em><br>Ctrl+S<br></em></p></div>
+				</div>
+								</div>
+						</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-1ead1641 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="1ead1641" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-753ffd13" data-id="753ffd13" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-525a5b57 elementor-widget elementor-widget-text-editor" data-id="525a5b57" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Отлично, память вас не подводит! На прошлом занятии вы создали по-настоящему крутые и атмосферные локации. Но, как и в любом кино или игре, даже самые красивые декорации не имеют смысла без главного героя. Сейчас наши миры пусты и безжизненны. Сегодня мы это исправим! Наша миссия — создать протагониста, нашего игрового аватара, и сделать первый, но самый важный шаг в программировании: мы напишем скрипт, который заставит его двигаться по нашей команде. Готовьтесь оживлять свои миры!</p><p>Начнем урок со знакомства с языком программирования <span style="color: #6e36d6;"><strong>GDScript</strong></span>. </p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-46a98ec4 elementor-alert-warning elementor-widget elementor-widget-alert" data-id="46a98ec4" data-element_type="widget" data-widget_type="alert.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-alert" role="alert">
+
+						<span class="elementor-alert-title">GDScript </span>
+			
+						<span class="elementor-alert-description">Это встроенный язык программирования в игровом движке Godot, специально разработанный для создания игр. </span>
+			
+			
+		</div>
+						</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-6b1df846 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="6b1df846" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-6e6d0a8a" data-id="6e6d0a8a" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-70a2ee53 elementor-widget elementor-widget-text-editor" data-id="70a2ee53" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Он похож на <strong>Python</strong>, что делает его доступным для новичков и мощным для опытных разработчиков. <strong>GDScript</strong> имеет простой и интуитивно понятный синтаксис. Вот несколько ключевых конструкций, которые вам нужно знать:</p><ul><li><span style="color: #6e36d6;"><strong>Комментарии </strong></span>используются для пояснения кода. В <strong>GDScript</strong> есть однострочные и многострочные комментарии. Комментарии помогают разработчикам лучше понимать код, особенно если к проекту возвращаются спустя некоторое время или если код читают другие разработчики.</li></ul>								</div>
+				</div>
+				<div class="elementor-element elementor-element-2334859d elementor-widget elementor-widget-code-highlight" data-id="2334859d" data-element_type="widget" data-widget_type="code-highlight.default">
+				<div class="elementor-widget-container">
+							<div class="prismjs-tomorrow copy-to-clipboard ">
+			<div class="code-toolbar"><pre data-line="" class="highlight-height  language-python"><code readonly="true" class="  language-python"><span class="token comment"># Это однострочный комментарий</span>
+
+<span class="token triple-quoted-string string">"""
+Это
+многострочный
+комментарий
+"""</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+		</div>
+						</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-5139a95 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="5139a95" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-bb174b9" data-id="bb174b9" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-919e4ef elementor-widget elementor-widget-text-editor" data-id="919e4ef" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>В <strong>GDScript</strong>, как и в <strong>Python</strong>, <strong>отступы</strong> важны. Они определяют блоки кода. Правильное использование отступов помогает структурировать код и делает его более читаемым. Неправильные отступы могут привести к ошибкам выполнения.</p><ul><li><span style="color: #6e36d6;"><strong>Условные операторы</strong></span> позволяют выполнять код в зависимости от условий. Они являются основным инструментом для принятия решений в программе. Условные операторы помогают создавать более сложные логические структуры и управлять потоком выполнения программы.</li></ul>								</div>
+				</div>
+				<div class="elementor-element elementor-element-ae5bc30 elementor-widget elementor-widget-code-highlight" data-id="ae5bc30" data-element_type="widget" data-widget_type="code-highlight.default">
+				<div class="elementor-widget-container">
+							<div class="prismjs-tomorrow copy-to-clipboard ">
+			<div class="code-toolbar"><pre data-line="" class="highlight-height  language-python"><code readonly="true" class="  language-python"><span class="token keyword">if</span> x <span class="token operator">&gt;</span> <span class="token number">10</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"x больше 10"</span><span class="token punctuation">)</span>
+<span class="token keyword">elif</span> x <span class="token operator">==</span> <span class="token number">10</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"x равно 10"</span><span class="token punctuation">)</span>
+<span class="token keyword">else</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"x меньше 10"</span><span class="token punctuation">)</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+		</div>
+						</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-f5475b7 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="f5475b7" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-7cf31cd" data-id="7cf31cd" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-d65e8ab elementor-widget elementor-widget-text-editor" data-id="d65e8ab" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<ul><li><span style="color: #6e36d6;"><strong>Циклы</strong></span> используются для повторения выполнения блока кода. Они позволяют выполнять одни и те же действия многократно, что особенно полезно при работе с массивами или при необходимости выполнения повторяющихся задач.</li></ul>								</div>
+				</div>
+				<div class="elementor-element elementor-element-d20d38f elementor-widget elementor-widget-code-highlight" data-id="d20d38f" data-element_type="widget" data-widget_type="code-highlight.default">
+				<div class="elementor-widget-container">
+							<div class="prismjs-tomorrow copy-to-clipboard ">
+			<div class="code-toolbar"><pre data-line="" class="highlight-height  language-python"><code readonly="true" class="  language-python"><span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span>
+
+<span class="token keyword">while</span> x <span class="token operator">&lt;</span> <span class="token number">10</span><span class="token punctuation">:</span>
+    x <span class="token operator">+=</span> <span class="token number">1</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+		</div>
+						</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-9623fd1 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="9623fd1" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-ae9783e" data-id="ae9783e" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-dafb29c elementor-widget elementor-widget-text-editor" data-id="dafb29c" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<hr><h3><strong>Работа с переменными и типами данных</strong></h3>								</div>
+				</div>
+				<div class="elementor-element elementor-element-e524178 elementor-alert-warning elementor-widget elementor-widget-alert" data-id="e524178" data-element_type="widget" data-widget_type="alert.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-alert" role="alert">
+
+						<span class="elementor-alert-title">Переменные</span>
+			
+						<span class="elementor-alert-description">Это именованные контейнеры для хранения данных. В GDScript переменные могут быть объявлены и инициализированы следующим образом.</span>
+			
+			
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-d65e574 elementor-widget elementor-widget-code-highlight" data-id="d65e574" data-element_type="widget" data-widget_type="code-highlight.default">
+				<div class="elementor-widget-container">
+							<div class="prismjs-tomorrow copy-to-clipboard ">
+			<div class="code-toolbar"><pre data-line="" class="highlight-height  language-python"><code readonly="true" class="  language-python">var my_variable <span class="token operator">=</span> <span class="token number">10</span>
+var my_string <span class="token operator">=</span> <span class="token string">"Hello, Godot!"</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+		</div>
+						</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-4c9a44f elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4c9a44f" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-93ff8c7" data-id="93ff8c7" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-01ee47b elementor-widget elementor-widget-text-editor" data-id="01ee47b" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p><strong>GDScript</strong> поддерживает несколько основных <strong>типов данных</strong>. Каждый тип данных имеет свои особенности и предназначен для хранения определенного вида информации. Правильное использование типов данных помогает оптимизировать работу программы и избежать ошибок:</p><ul><li><span style="color: #6e36d6;"><strong>int</strong>:</span> Целые числа</li><li><span style="color: #6e36d6;"><strong>float</strong>:</span> Числа с плавающей точкой</li><li><span style="color: #6e36d6;"><strong>String</strong>:</span> Строки</li><li><span style="color: #6e36d6;"><strong>bool</strong>:</span> Логические значения (<strong>true</strong>/<strong>false</strong>)</li><li><span style="color: #6e36d6;"><strong>Array</strong></span>: Массивы</li><li><span style="color: #6e36d6;"><strong> Dictionary:</strong></span> Словари</li></ul>								</div>
+				</div>
+				<div class="elementor-element elementor-element-369dc14 elementor-widget elementor-widget-code-highlight" data-id="369dc14" data-element_type="widget" data-widget_type="code-highlight.default">
+				<div class="elementor-widget-container">
+							<div class="prismjs-tomorrow copy-to-clipboard ">
+			<div class="code-toolbar"><pre data-line="" class="highlight-height  language-python"><code readonly="true" class="  language-python">var my_int <span class="token operator">=</span> <span class="token number">42</span>
+var my_float <span class="token operator">=</span> <span class="token number">3.14</span>
+var my_bool <span class="token operator">=</span> true
+var my_array <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">]</span>
+var my_dict <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token string">"key"</span><span class="token punctuation">:</span> <span class="token string">"value"</span><span class="token punctuation">}</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+		</div>
+						</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-78a0077e elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="78a0077e" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-2bcec4f4" data-id="2bcec4f4" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-44a339c5 elementor-widget elementor-widget-text-editor" data-id="44a339c5" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Иногда нужно преобразовать один тип данных в другой. Преобразование типов позволяет адаптировать данные для различных операций и избежать ошибок, связанных с несовместимостью типов</p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-16e81026 elementor-widget elementor-widget-code-highlight" data-id="16e81026" data-element_type="widget" data-widget_type="code-highlight.default">
+				<div class="elementor-widget-container">
+							<div class="prismjs-tomorrow copy-to-clipboard ">
+			<div class="code-toolbar"><pre data-line="" class="highlight-height  language-python"><code readonly="true" class="  language-python">var Number <span class="token operator">=</span> <span class="token number">10</span>
+var string_Number <span class="token operator">=</span> <span class="token builtin">str</span><span class="token punctuation">(</span>Number<span class="token punctuation">)</span> <span class="token comment"># Преобразование int в String</span>
+var Float_Number <span class="token operator">=</span> <span class="token builtin">float</span><span class="token punctuation">(</span>Number<span class="token punctuation">)</span> <span class="token comment"># Преобразование int в float</span>
+var string <span class="token operator">=</span> “<span class="token number">12</span>”
+var Number_string <span class="token operator">=</span> <span class="token builtin">int</span><span class="token punctuation">(</span>String<span class="token punctuation">)</span> <span class="token comment"># Преобразование String в int</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+		</div>
+						</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-5c0558e elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="5c0558e" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-3f3a42f" data-id="3f3a42f" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-9ba675f elementor-widget elementor-widget-text-editor" data-id="9ba675f" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<hr><h3><strong>Функции и методы</strong></h3>								</div>
+				</div>
+				<div class="elementor-element elementor-element-3000bb1 elementor-alert-warning elementor-widget elementor-widget-alert" data-id="3000bb1" data-element_type="widget" data-widget_type="alert.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-alert" role="alert">
+
+						<span class="elementor-alert-title">Функции</span>
+			
+						<span class="elementor-alert-description">Это блоки кода, которые выполняют определенные задачи и могут быть вызваны по имени. В GDScript функции объявляются с помощью ключевого слова func. </span>
+			
+			
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-b094011 elementor-widget elementor-widget-text-editor" data-id="b094011" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Функции помогают структурировать код, делая его более модульным и удобным для повторного использования.</p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-aba1801 elementor-widget elementor-widget-code-highlight" data-id="aba1801" data-element_type="widget" data-widget_type="code-highlight.default">
+				<div class="elementor-widget-container">
+							<div class="prismjs-tomorrow copy-to-clipboard ">
+			<div class="code-toolbar"><pre data-line="" class="highlight-height  language-python"><code readonly="true" class="  language-python">func my_function<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Это моя функция"</span><span class="token punctuation">)</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+		</div>
+						</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-65f9521 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="65f9521" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-926501a" data-id="926501a" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-abbb62b elementor-widget elementor-widget-text-editor" data-id="abbb62b" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Функции могут принимать параметры и возвращать значения. Это позволяет передавать данные в функции и получать результат их работы, что делает функции более гибкими и мощными.</p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-a8bc1b2 elementor-widget elementor-widget-code-highlight" data-id="a8bc1b2" data-element_type="widget" data-widget_type="code-highlight.default">
+				<div class="elementor-widget-container">
+							<div class="prismjs-tomorrow copy-to-clipboard ">
+			<div class="code-toolbar"><pre data-line="" class="highlight-height  language-python"><code readonly="true" class="  language-python">func add_numbers<span class="token punctuation">(</span>a<span class="token punctuation">,</span> b<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">return</span> a <span class="token operator">+</span> b
+
+var result <span class="token operator">=</span> add_numbers<span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span>  <span class="token comment"># result будет равно 8</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+		</div>
+						</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-5f62006 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="5f62006" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-da17188" data-id="da17188" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-20979b4 elementor-widget elementor-widget-text-editor" data-id="20979b4" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Godot предоставляет множество встроенных функций для работы с игровыми объектами, сценами и ресурсами. Например, функция <span style="color: #6e36d6;"><strong><em>print()</em></strong></span> выводит текст в консоль. Встроенные функции облегчают выполнение часто используемых задач и позволяют сосредоточиться на создании уникальных игровых механик.</p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-d7b9205 elementor-widget elementor-widget-code-highlight" data-id="d7b9205" data-element_type="widget" data-widget_type="code-highlight.default">
+				<div class="elementor-widget-container">
+							<div class="prismjs-tomorrow copy-to-clipboard ">
+			<div class="code-toolbar"><pre data-line="" class="highlight-height  language-python"><code readonly="true" class="  language-python"><span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Hello, Godot!"</span><span class="token punctuation">)</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+		</div>
+						</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-d6ab27c elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="d6ab27c" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-4c91b4ca" data-id="4c91b4ca" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-6501f823 elementor-widget elementor-widget-text-editor" data-id="6501f823" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Как видите, <strong>GDScript</strong> своим синтаксисом очень сильно напоминает <strong>Python</strong> и, хотя они не являются родственниками, их сходство облегчает создание игр как для новичков, так и для гуру-программистов!</p><p>Теперь перейдем к самому интересному — добавлению игрового персонажа! Так как в Godot добавление игровых объектов, а также их свойств осуществляется через узлы, то и структура вашего героя будет иметь вид древа: основной узел героя будет содержать в себе дочерние узлы – спрайт (внешний вид) персонажа, его анимации, область коллизии (столкновения), камера персонажа и прочее.</p><p>Итак, создадим главный узел игрока — добавьте в вашу сцену новый узел и выберите тип <strong>CharacterBody2D</strong>. Добавить узел можно двумя способами:</p><ul><li>Нажать <strong>ПКМ</strong> по сцене и выбрать пункт <strong>Добавить узел сюда</strong></li><li>Нажать <strong>ПКМ</strong> по узлу сцены в древе и выбрать пункт <strong>Добавить дочерний узел</strong></li></ul><p>Результатом любого из способов будет открывшееся окно, как на <em>рисунке 1</em>.</p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-5e377e24 elementor-widget elementor-widget-image" data-id="5e377e24" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+												<figure class="wp-caption">
+										<img fetchpriority="high" decoding="async" width="902" height="739" src="./GODOT. Урок №2. Основы GDScript. — Материалы Journal_files/Рисунок1-42.png" class="attachment-large size-large wp-image-54119" alt="" srcset="https://top-academy.site/wp-content/uploads/2025/08/Рисунок1-42.png 902w, https://top-academy.site/wp-content/uploads/2025/08/Рисунок1-42-300x246.png 300w, https://top-academy.site/wp-content/uploads/2025/08/Рисунок1-42-768x629.png 768w" sizes="(max-width: 902px) 100vw, 902px">											<figcaption class="widget-image-caption wp-caption-text">Рисунок 1</figcaption>
+										</figure>
+									</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-e3ff02b elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="e3ff02b" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-5bdd81a" data-id="5bdd81a" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-d9363cc elementor-widget elementor-widget-text-editor" data-id="d9363cc" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>В открывшемся окне, как показано на <em>рисунке 1</em> необходимо ввести в поле поиска имя узла — <strong>CharacterBody2D </strong>и нажать <strong>ЛКМ</strong> кнопку <strong>Создать</strong>.</p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-4d596a8 elementor-alert-warning elementor-widget elementor-widget-alert" data-id="4d596a8" data-element_type="widget" data-widget_type="alert.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-alert" role="alert">
+
+						<span class="elementor-alert-title">CharacterBody2D</span>
+			
+						<span class="elementor-alert-description">Это специальный узел в Godot (начиная с версии 4),
+предназначенный для управления 2D-персонажами и объектами, которые должны самостоятельно контролировать свое движение и столкновения.
+</span>
+			
+			
+		</div>
+						</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-c30c757 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="c30c757" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-7f0996a" data-id="7f0996a" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-d33546d elementor-widget elementor-widget-text-editor" data-id="d33546d" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>На сцене <em>(рис. 2)</em> появится перекрестие, обозначающее местоположение вновь созданного узла, также, в древе сцен и узлов <em>(рис. 3)</em> появится новый узел.</p>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-5396cbbb elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="5396cbbb" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-6066d525" data-id="6066d525" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-449dfd20 elementor-widget__width-initial elementor-widget elementor-widget-image" data-id="449dfd20" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+												<figure class="wp-caption">
+										<img decoding="async" width="261" height="181" src="./GODOT. Урок №2. Основы GDScript. — Материалы Journal_files/Рисунок2-16.png" class="attachment-large size-large wp-image-54120" alt="">											<figcaption class="widget-image-caption wp-caption-text">Рисунок 2</figcaption>
+										</figure>
+									</div>
+				</div>
+				<div class="elementor-element elementor-element-3284117e elementor-widget__width-initial elementor-widget elementor-widget-image" data-id="3284117e" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+												<figure class="wp-caption">
+										<img decoding="async" width="289" height="200" src="./GODOT. Урок №2. Основы GDScript. — Материалы Journal_files/Рисунок3-11.png" class="attachment-large size-large wp-image-54121" alt="">											<figcaption class="widget-image-caption wp-caption-text">Рисунок 3</figcaption>
+										</figure>
+									</div>
+				</div>
+				<div class="elementor-element elementor-element-1be3934d elementor-alert-warning elementor-widget elementor-widget-alert" data-id="1be3934d" data-element_type="widget" data-widget_type="alert.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-alert" role="alert">
+
+						<span class="elementor-alert-title">Обратите внимание! </span>
+			
+						<span class="elementor-alert-description">Сейчас узел выдает предупреждение о том, что узел не имеет формы (рис. 3) и, соответственно, не умеет сталкиваться с другими объектами. Но в дальнейшем мы добавим другие дочерние объекты и данное предупреждение исчезнет! </span>
+			
+			
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-9f27743 elementor-alert-warning elementor-widget elementor-widget-alert" data-id="9f27743" data-element_type="widget" data-widget_type="alert.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-alert" role="alert">
+
+						<span class="elementor-alert-title">Также! Напоминаем!</span>
+			
+						<span class="elementor-alert-description">Что всем узлам и сценам рекомендуется давать осмысленные имена, чтобы быстро находить нужные вам объекты в древе сцен! </span>
+			
+			
+		</div>
+						</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-957e954 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="957e954" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-45a3731" data-id="45a3731" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-663cb36 elementor-widget elementor-widget-text-editor" data-id="663cb36" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Дайте имя созданному узлу, например, <em>Player</em> или <em>MainHero</em>. Имя можно выбрать любое. Данный узел станет <strong>Корневым</strong> для вашего героя. Все дальнейшие узлы будут <strong>дочерними</strong>.</p><p>Теперь добавим изображение герою. Для этого нажмите <strong>ПКМ</strong> по корневому узлу героя и добавьте ему <strong>дочерний узел</strong> <strong>Sprite2D</strong> <em>(рис. 4).</em></p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-a00a190 elementor-widget elementor-widget-image" data-id="a00a190" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+												<figure class="wp-caption">
+										<img loading="lazy" decoding="async" width="281" height="66" src="./GODOT. Урок №2. Основы GDScript. — Материалы Journal_files/Рисунок4-15.png" class="attachment-large size-large wp-image-54122" alt="">											<figcaption class="widget-image-caption wp-caption-text">Рисунок 4</figcaption>
+										</figure>
+									</div>
+				</div>
+				<div class="elementor-element elementor-element-c574bb8 elementor-alert-warning elementor-widget elementor-widget-alert" data-id="c574bb8" data-element_type="widget" data-widget_type="alert.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-alert" role="alert">
+
+						<span class="elementor-alert-title">Sprite2D </span>
+			
+						<span class="elementor-alert-description">Это узел Godot (начиная с версии 4), предназначенный для отображения двумерного изображения (текстуры) в сцене. Обычно он используется, чтобы визуально представить персонажей, объекты окружения, эффекты и т.п.</span>
+			
+			
+		</div>
+						</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-60c643f elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="60c643f" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-7e72ba4" data-id="7e72ba4" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-7ea65cc elementor-widget elementor-widget-text-editor" data-id="7ea65cc" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Нажав <strong>ЛКМ</strong> по узлу <strong>Sprite2D</strong>, обратите внимание на окно <strong>Инспектора</strong> <em>(рис. 5).</em></p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-a30b454 elementor-widget elementor-widget-image" data-id="a30b454" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+												<figure class="wp-caption">
+										<img loading="lazy" decoding="async" width="285" height="236" src="./GODOT. Урок №2. Основы GDScript. — Материалы Journal_files/Рисунок5-14.png" class="attachment-large size-large wp-image-54123" alt="">											<figcaption class="widget-image-caption wp-caption-text">Рисунок 5</figcaption>
+										</figure>
+									</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-c432cd5 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="c432cd5" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-c400399" data-id="c400399" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-866c450 elementor-widget elementor-widget-text-editor" data-id="866c450" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>В параметре <strong>Texture – текстура</strong> необходимо <strong>загрузить</strong> из ассетов проекта изображение героя. По умолчанию это файл <strong>tile_0002.png</strong>, однако, вы можете выбрать по своему желанию любой другой файл <em>(рис. 6).</em></p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-2941bcd elementor-widget elementor-widget-image" data-id="2941bcd" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+												<figure class="wp-caption">
+										<img loading="lazy" decoding="async" width="1024" height="719" src="./GODOT. Урок №2. Основы GDScript. — Материалы Journal_files/Рисунок6-14-1024x719.png" class="attachment-large size-large wp-image-54124" alt="" srcset="https://top-academy.site/wp-content/uploads/2025/08/Рисунок6-14-1024x719.png 1024w, https://top-academy.site/wp-content/uploads/2025/08/Рисунок6-14-300x211.png 300w, https://top-academy.site/wp-content/uploads/2025/08/Рисунок6-14-768x539.png 768w, https://top-academy.site/wp-content/uploads/2025/08/Рисунок6-14.png 1052w" sizes="auto, (max-width: 1024px) 100vw, 1024px">											<figcaption class="widget-image-caption wp-caption-text">Рисунок 6</figcaption>
+										</figure>
+									</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-4768337 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4768337" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-ef501af" data-id="ef501af" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-2332c51 elementor-widget elementor-widget-text-editor" data-id="2332c51" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>После чего на вашей сцене появится ваш герой <em>(рис. 7).</em></p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-b96554e elementor-widget elementor-widget-image" data-id="b96554e" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+												<figure class="wp-caption">
+										<img loading="lazy" decoding="async" width="1024" height="544" src="./GODOT. Урок №2. Основы GDScript. — Материалы Journal_files/Рисунок7-11-1024x544.png" class="attachment-large size-large wp-image-54125" alt="" srcset="https://top-academy.site/wp-content/uploads/2025/08/Рисунок7-11-1024x544.png 1024w, https://top-academy.site/wp-content/uploads/2025/08/Рисунок7-11-300x159.png 300w, https://top-academy.site/wp-content/uploads/2025/08/Рисунок7-11-768x408.png 768w, https://top-academy.site/wp-content/uploads/2025/08/Рисунок7-11-1536x816.png 1536w, https://top-academy.site/wp-content/uploads/2025/08/Рисунок7-11.png 1920w" sizes="auto, (max-width: 1024px) 100vw, 1024px">											<figcaption class="widget-image-caption wp-caption-text">Рисунок 7</figcaption>
+										</figure>
+									</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-8e52245 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="8e52245" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-923b59a" data-id="923b59a" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-9bd6710 elementor-widget elementor-widget-text-editor" data-id="9bd6710" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Следующим важным <strong>дочерним узлом</strong> вашего персонажа является — <strong>CollisionShape2D</strong>.</p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-a2d32a3 elementor-alert-warning elementor-widget elementor-widget-alert" data-id="a2d32a3" data-element_type="widget" data-widget_type="alert.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-alert" role="alert">
+
+						<span class="elementor-alert-title">CollisionShape2D </span>
+			
+						<span class="elementor-alert-description">Это узел в Godot, который определяет форму для столкновений (коллизий) в двухмерном пространстве. Проще говоря, он указывает движку, где именно находится «физическая граница» объекта.</span>
+			
+			
+		</div>
+						</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-b25437c elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="b25437c" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-a64c640" data-id="a64c640" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-4f01e8b elementor-widget elementor-widget-text-editor" data-id="4f01e8b" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Нажмите <strong>ПКМ</strong> по корневому узлу героя и добавьте ему дочерний узел <strong>CollisionShape2D</strong> <em>(рис. 8).</em></p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-021a4dd elementor-widget elementor-widget-image" data-id="021a4dd" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+												<figure class="wp-caption">
+										<img loading="lazy" decoding="async" width="1024" height="544" src="./GODOT. Урок №2. Основы GDScript. — Материалы Journal_files/Рисунок8-10-1024x544.png" class="attachment-large size-large wp-image-54126" alt="" srcset="https://top-academy.site/wp-content/uploads/2025/08/Рисунок8-10-1024x544.png 1024w, https://top-academy.site/wp-content/uploads/2025/08/Рисунок8-10-300x159.png 300w, https://top-academy.site/wp-content/uploads/2025/08/Рисунок8-10-768x408.png 768w, https://top-academy.site/wp-content/uploads/2025/08/Рисунок8-10-1536x816.png 1536w, https://top-academy.site/wp-content/uploads/2025/08/Рисунок8-10.png 1920w" sizes="auto, (max-width: 1024px) 100vw, 1024px">											<figcaption class="widget-image-caption wp-caption-text">Рисунок 8</figcaption>
+										</figure>
+									</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-2297917 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="2297917" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-2ba0a32" data-id="2ba0a32" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-54626cb elementor-widget elementor-widget-text-editor" data-id="54626cb" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>В окне <strong>Инспектора</strong> данного узла выберите для параметра <strong>Shape</strong> значение <strong>Rectangle</strong> (прямоугольник) <em>(рис. 9). </em>И отредактируйте границы прямоугольника под границы спрайта героя, как показано на <em>рисунке 8</em>.</p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-77f4661 elementor-widget elementor-widget-image" data-id="77f4661" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+												<figure class="wp-caption">
+										<img loading="lazy" decoding="async" width="284" height="236" src="./GODOT. Урок №2. Основы GDScript. — Материалы Journal_files/Рисунок9-9.png" class="attachment-large size-large wp-image-54127" alt="">											<figcaption class="widget-image-caption wp-caption-text">Рисунок 9</figcaption>
+										</figure>
+									</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-c533cb9 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="c533cb9" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-9b646c4" data-id="9b646c4" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-ffba634 elementor-widget elementor-widget-text-editor" data-id="ffba634" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Обратите внимание на параметр <strong>Transform </strong>в <strong>Инспекторе</strong>. У корневого узла и дочерних, у дочерних объектов параметры <strong>x </strong>и <strong>y </strong>должны быть (0,0), иначе «физическое тело» будет в одном месте, его изображение в другом, а область столкновения может быть вообще в третьем <em>(рис. 9).</em></p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-2715b08 elementor-widget elementor-widget-image" data-id="2715b08" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+												<figure class="wp-caption">
+										<img loading="lazy" decoding="async" width="268" height="217" src="./GODOT. Урок №2. Основы GDScript. — Материалы Journal_files/Рисунок10-8.png" class="attachment-large size-large wp-image-54128" alt="">											<figcaption class="widget-image-caption wp-caption-text">Рисунок 10</figcaption>
+										</figure>
+									</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-6dff40f0 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="6dff40f0" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-83bcbf2" data-id="83bcbf2" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-54feafdc elementor-widget elementor-widget-text-editor" data-id="54feafdc" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Перемещать персонажа вместе со всеми его узлами сразу можно, используя инструмент Перемещение (горячая клавиша W). Главное выделить корневой узел – CharacterBody2D.</p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-72263a25 elementor-alert-warning elementor-widget elementor-widget-alert" data-id="72263a25" data-element_type="widget" data-widget_type="alert.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-alert" role="alert">
+
+						<span class="elementor-alert-title">Важно!</span>
+			
+						<span class="elementor-alert-description">Не забудьте после перемещения вернуться в режим Выделение (горячая клавиша Q)</span>
+			
+			
+		</div>
+						</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-54f00e0 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="54f00e0" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-5766bee" data-id="5766bee" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-73ed1ee elementor-widget elementor-widget-text-editor" data-id="73ed1ee" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Последним узлом, который необходимо добавить герою, является узел <strong>Camera2D</strong>.</p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-ba57fa0 elementor-alert-warning elementor-widget elementor-widget-alert" data-id="ba57fa0" data-element_type="widget" data-widget_type="alert.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-alert" role="alert">
+
+						<span class="elementor-alert-title">Camera2D</span>
+			
+						<span class="elementor-alert-description">Это специальный узел в Godot, который определяет, какую часть 2D-сцены видит игрок на экране. Если кратко, он «смотрит» на сцену и выводит выбранную область на экран.</span>
+			
+			
+		</div>
+						</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-0e3f932 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="0e3f932" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-ecd8ae8" data-id="ecd8ae8" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-9de316f elementor-widget elementor-widget-text-editor" data-id="9de316f" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>С помощью параметра <strong>Zoom</strong> в <strong>Инспекторе</strong> можно настроить масштаб камеры, приближая или отдаляя его относительно главного героя.</p><p>Теперь прикрепите скрипт к <strong>корневому узлу</strong> вашего героя. Наш скрипт будет наследоваться от <strong>CharacterBody2D</strong> и позволит перемещать персонажа по всем 4 направлениям. Чтобы прикрепить новый скрипт, выделите <strong>ПКМ</strong> <strong>корневой узел героя</strong> – MainHero. И выберите <strong>Прикрепить скрипт</strong> <em>(рис. 11).</em></p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-ecd0933 elementor-widget elementor-widget-image" data-id="ecd0933" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+												<figure class="wp-caption">
+										<img loading="lazy" decoding="async" width="535" height="599" src="./GODOT. Урок №2. Основы GDScript. — Материалы Journal_files/Рисунок11-6.png" class="attachment-large size-large wp-image-54129" alt="" srcset="https://top-academy.site/wp-content/uploads/2025/08/Рисунок11-6.png 535w, https://top-academy.site/wp-content/uploads/2025/08/Рисунок11-6-268x300.png 268w" sizes="auto, (max-width: 535px) 100vw, 535px">											<figcaption class="widget-image-caption wp-caption-text">Рисунок 11</figcaption>
+										</figure>
+									</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-bf9b9f6 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="bf9b9f6" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-9d89438" data-id="9d89438" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-ed28ef9 elementor-widget elementor-widget-text-editor" data-id="ed28ef9" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Появится новое окно – <strong>прикрепить скрипт узла</strong> <em>(рис. 12).</em></p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-b38ebb8 elementor-widget elementor-widget-image" data-id="b38ebb8" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+												<figure class="wp-caption">
+										<img loading="lazy" decoding="async" width="522" height="470" src="./GODOT. Урок №2. Основы GDScript. — Материалы Journal_files/Рисунок12-6.png" class="attachment-large size-large wp-image-54130" alt="" srcset="https://top-academy.site/wp-content/uploads/2025/08/Рисунок12-6.png 522w, https://top-academy.site/wp-content/uploads/2025/08/Рисунок12-6-300x270.png 300w" sizes="auto, (max-width: 522px) 100vw, 522px">											<figcaption class="widget-image-caption wp-caption-text">Рисунок 12</figcaption>
+										</figure>
+									</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-1d693ba elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="1d693ba" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-2ca59e9" data-id="2ca59e9" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-6ae408b elementor-widget elementor-widget-text-editor" data-id="6ae408b" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Убедитесь, что в параметре <strong>Наследует </strong>выбран <strong>корневой узел</strong> героя – <strong>CharacterBody2D. </strong>Обязательно отключите пункт параметра <strong>Шаблон</strong> и убедитесь, что скрипт будет сохранен в папку <strong>Scripts</strong>. После чего нажмите кнопку <strong>Создать</strong>.</p><p>После чего откроется встроенный редактор кода <em>(рис. 13).</em> Вы можете также использовать внешние редакторы кода, например – <strong>Visual Studio Code</strong>, но в данную среду необходимо будет добавить дополнение, например <strong>godot-tools </strong>от разработчика <strong>Geequlim.</strong> Поэтому отчасти проще использовать встроенный редактор.</p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-e552294 elementor-widget elementor-widget-image" data-id="e552294" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+												<figure class="wp-caption">
+										<img loading="lazy" decoding="async" width="1024" height="544" src="./GODOT. Урок №2. Основы GDScript. — Материалы Journal_files/Рисунок13-6-1024x544.png" class="attachment-large size-large wp-image-54131" alt="" srcset="https://top-academy.site/wp-content/uploads/2025/08/Рисунок13-6-1024x544.png 1024w, https://top-academy.site/wp-content/uploads/2025/08/Рисунок13-6-300x159.png 300w, https://top-academy.site/wp-content/uploads/2025/08/Рисунок13-6-768x408.png 768w, https://top-academy.site/wp-content/uploads/2025/08/Рисунок13-6-1536x816.png 1536w, https://top-academy.site/wp-content/uploads/2025/08/Рисунок13-6.png 1920w" sizes="auto, (max-width: 1024px) 100vw, 1024px">											<figcaption class="widget-image-caption wp-caption-text">Рисунок 13</figcaption>
+										</figure>
+									</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-7aa4b3b0 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="7aa4b3b0" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-31e5328" data-id="31e5328" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-41a416ff elementor-widget elementor-widget-text-editor" data-id="41a416ff" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Начнем создание скрипта!</p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-24bb49f6 elementor-widget elementor-widget-code-highlight" data-id="24bb49f6" data-element_type="widget" data-widget_type="code-highlight.default">
+				<div class="elementor-widget-container">
+							<div class="prismjs-tomorrow copy-to-clipboard ">
+			<div class="code-toolbar"><pre data-line="" class="highlight-height  language-python"><code readonly="true" class="  language-python">extends CharacterBody2D
+
+var speed <span class="token operator">=</span> <span class="token number">200</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+		</div>
+						</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-700738e elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="700738e" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-fd508e8" data-id="fd508e8" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-09bcd10 elementor-widget elementor-widget-text-editor" data-id="09bcd10" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Разберем данные строки:</p><ul><li><span style="color: #6e36d6;"><strong><em>extends CharacterBody2D </em></strong></span><em>– </em>данная строка говорит, что данный скрипт наследуется от узла <strong>CharacterBody2D</strong>. Это значит, что скрипт сможет использовать все свойства и методы, связанные с движением и физикой такого узла.</li><li><span style="color: #6e36d6;"><strong><em>var speed = 200</em></strong></span> — Объявление переменной <strong>speed</strong> со значением 200. Отвечает за скорость передвижения персонажа по осям X и Y.</li></ul><p>&nbsp;Продолжим создание скрипта:</p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-cd4ed07 elementor-widget elementor-widget-code-highlight" data-id="cd4ed07" data-element_type="widget" data-widget_type="code-highlight.default">
+				<div class="elementor-widget-container">
+							<div class="prismjs-tomorrow copy-to-clipboard ">
+			<div class="code-toolbar"><pre data-line="" class="highlight-height  language-python"><code readonly="true" class="  language-python">extends CharacterBody2D
+
+var speed <span class="token operator">=</span> <span class="token number">200</span>
+
+func _physics_process<span class="token punctuation">(</span>_delta<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">if</span> Input<span class="token punctuation">.</span>is_action_pressed<span class="token punctuation">(</span><span class="token string">"ui_right"</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        velocity<span class="token punctuation">.</span>x <span class="token operator">=</span> speed
+    <span class="token keyword">elif</span> Input<span class="token punctuation">.</span>is_action_pressed<span class="token punctuation">(</span><span class="token string">"ui_left"</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        velocity<span class="token punctuation">.</span>x <span class="token operator">=</span> <span class="token operator">-</span>speed
+    <span class="token keyword">else</span><span class="token punctuation">:</span>
+        velocity<span class="token punctuation">.</span>x <span class="token operator">=</span> <span class="token number">0</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+		</div>
+						</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-9c91ac5 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="9c91ac5" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-8fff56d" data-id="8fff56d" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-f19c73c elementor-widget elementor-widget-text-editor" data-id="f19c73c" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Разберем код построчно:</p><ul><li><span style="color: #6e36d6;"><strong><em>func _physics_process(_delta): </em></strong></span>— в данной строке происходит определение функции <span style="color: #6e36d6;"><strong>_physics_process()</strong></span>, это функция, которую Godot вызывает через равные промежутки времени, в соответствии с настроенной частотой физического шага (по умолчанию 60 раз в секунду). Она предназначена для обработки логики, зависящей от физики и стабильного тайминга.<br><br></li><li>Аргумент <span style="color: #6e36d6;"><strong>_delta</strong> </span>содержит время (в секундах), прошедшее с момента прошлого кадра. Важно использовать <span style="color: #6e36d6;"><strong>_delta</strong></span> в расчетах движения т.к. это обеспечивает одинаковую скорость независимо от частоты кадров.<br><br></li><li>Далее идет условная конструкция. <span style="color: #6e36d6;"><strong>Input.is_action_pressed</strong></span> считывает нажатие определенной в скобках клавиши. В данной условной конструкции идет проверка клавиш <strong>«<span style="color: #6e36d6;">ui_right</span>«</strong> – стрелка вправо и <strong>«<span style="color: #6e36d6;">ui_left</span>» </strong>– стрелка влево.</li></ul><ul><li><span style="color: #6e36d6;"><strong>«ui_right» \ «ui_left» \ «ui_up» \ «ui_down»</strong></span> – это одна из стандартных (предустановленных) входных команд Godot, которая обычно используется для навигации в UI (например, переключение кнопок интерфейса), но данные команды возможно использовать и для управления персонажем.</li></ul><p><em>В данном случае при нажатии стрелки влево передается отрицательная скорость, а при нажатии стрелки вправо – положительная. Если не нажата ни одна из кнопок – персонаж остается на месте.</em></p><ul><li>Последним этапом в данном скрипте будет добавление метода <strong><span style="color: #6e36d6;">move_and_slide()</span>.</strong> Это метод узла<span style="color: #6e36d6;"> <strong>CharacterBody2D</strong></span>, который совершает перемещение с учетом коллизий (столкновений со стенами, платформами и т. п.), используя текущую <span style="color: #6e36d6;"><strong>velocity</strong></span> – скорость.</li></ul>								</div>
+				</div>
+				<div class="elementor-element elementor-element-34b23a9 elementor-widget elementor-widget-code-highlight" data-id="34b23a9" data-element_type="widget" data-widget_type="code-highlight.default">
+				<div class="elementor-widget-container">
+							<div class="prismjs-tomorrow copy-to-clipboard ">
+			<div class="code-toolbar"><pre data-line="" class="highlight-height  language-python"><code readonly="true" class="  language-python">extends CharacterBody2D
+
+var speed <span class="token operator">=</span> <span class="token number">50</span>
+
+func _physics_process<span class="token punctuation">(</span>_delta<span class="token punctuation">)</span><span class="token punctuation">:</span>
+	<span class="token keyword">if</span> Input<span class="token punctuation">.</span>is_action_pressed<span class="token punctuation">(</span><span class="token string">"ui_right"</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+		velocity<span class="token punctuation">.</span>x <span class="token operator">=</span> speed
+	<span class="token keyword">elif</span> Input<span class="token punctuation">.</span>is_action_pressed<span class="token punctuation">(</span><span class="token string">"ui_left"</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+		velocity<span class="token punctuation">.</span>x <span class="token operator">=</span> <span class="token operator">-</span>speed
+	<span class="token keyword">else</span><span class="token punctuation">:</span>
+		velocity<span class="token punctuation">.</span>x <span class="token operator">=</span> <span class="token number">0</span>
+
+	move_and_slide<span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-8a31375 elementor-alert-warning elementor-widget elementor-widget-alert" data-id="8a31375" data-element_type="widget" data-widget_type="alert.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-alert" role="alert">
+
+						<span class="elementor-alert-title">Обратите внимание! </span>
+			
+						<span class="elementor-alert-description">Метод добавляется в тело функции, а не тело скрипта!</span>
+			
+			
+		</div>
+						</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-2694226b elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="2694226b" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-1a966424" data-id="1a966424" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-3d74750a elementor-widget elementor-widget-text-editor" data-id="3d74750a" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<hr><h3><span style="color: #6e36d6;"><strong>Самостоятельная работа!</strong> </span></h3><p>На основе уже написанного кода попробуйте добавить перемещение по вертикали. Для этого можно использовать дополнительные проверки ввода!</p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-3af572fa elementor-widget elementor-widget-toggle" data-id="3af572fa" data-element_type="widget" data-widget_type="toggle.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-toggle">
+							<div class="elementor-toggle-item">
+					<div id="elementor-tab-title-9891" class="elementor-tab-title" data-tab="1" role="button" aria-controls="elementor-tab-content-9891" aria-expanded="false">
+												<span class="elementor-toggle-icon elementor-toggle-icon-left" aria-hidden="true">
+															<span class="elementor-toggle-icon-closed"><i class="fas fa-caret-right"></i></span>
+								<span class="elementor-toggle-icon-opened"><i class="elementor-toggle-icon-opened fas fa-caret-up"></i></span>
+													</span>
+												<a class="elementor-toggle-title" tabindex="0">     Ниже ответ: </a>
+					</div>
+
+					<div id="elementor-tab-content-9891" class="elementor-tab-content elementor-clearfix" data-tab="1" role="region" aria-labelledby="elementor-tab-title-9891"><p><em>extends CharacterBody2D</em></p><p><em>var speed = 50</em></p><p><em>func _physics_process(_delta):</em></p><p><em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if Input.is_action_pressed(«ui_right»):</em></p><p><em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; velocity.x = speed</em></p><p><em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; elif Input.is_action_pressed(«ui_left»):</em></p><p><em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; velocity.x = -speed</em></p><p><em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; else:</em></p><p><em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; velocity.x = 0</em></p><p><em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if Input.is_action_pressed(«ui_up»):</em></p><p><em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; velocity.y = -speed</em></p><p><em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; elif Input.is_action_pressed(«ui_down»):</em></p><p><em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; velocity.y = speed</em></p><p><em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; else:</em></p><p><em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; velocity.y = 0</em></p><p><em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; move_and_slide()</em></p></div>
+				</div>
+								</div>
+						</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-8649215 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="8649215" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-002e729" data-id="002e729" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-d88c4ab elementor-widget elementor-widget-text-editor" data-id="d88c4ab" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Вторая условная конструкция проверяет стрелки вверх \ вниз и меняет скорость уже по вертикали, иначе персонаж стоит на месте.</p><p>По умолчанию в Godot в <strong>Input Map – списке действий</strong> заданы следующие действия:</p><ul><li><span style="color: #6e36d6;"><strong>ui_up</strong></span> – обычно назначена на клавишу «Стрелка вверх».</li><li><span style="color: #6e36d6;"><strong>ui_down</strong></span> – обычно назначена на клавишу «Стрелка вниз».</li><li><span style="color: #6e36d6;"><strong>ui_left</strong></span> – обычно назначена на клавишу «Стрелка влево».</li><li><span style="color: #6e36d6;"><strong>ui_right</strong></span> – обычно назначена на клавишу «Стрелка вправо».</li></ul><p>Вы можете посмотреть или изменить эти назначения, открыв список действий по пути: вкладка <strong>Проект </strong>→ <strong>Настройки проекта</strong> → вкладка <strong>Список действий</strong>. В домашней работе вам потребуется использовать клавишу <strong>Shift</strong>, поэтому добавим ее сейчас в состав проекта.</p><p>Открыв список действий, как показано на <em>рисунке 14</em>, введите в поле название действия по аналогии с другими клавишами: <strong>ui_shift</strong>. После чего нажмите <strong>Добавить</strong>.</p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-904eac9 elementor-widget elementor-widget-image" data-id="904eac9" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+												<figure class="wp-caption">
+										<img loading="lazy" decoding="async" width="1024" height="630" src="./GODOT. Урок №2. Основы GDScript. — Материалы Journal_files/Рисунок14-4-1024x630.png" class="attachment-large size-large wp-image-54132" alt="" srcset="https://top-academy.site/wp-content/uploads/2025/08/Рисунок14-4-1024x630.png 1024w, https://top-academy.site/wp-content/uploads/2025/08/Рисунок14-4-300x184.png 300w, https://top-academy.site/wp-content/uploads/2025/08/Рисунок14-4-768x472.png 768w, https://top-academy.site/wp-content/uploads/2025/08/Рисунок14-4.png 1202w" sizes="auto, (max-width: 1024px) 100vw, 1024px">											<figcaption class="widget-image-caption wp-caption-text">Рисунок 14</figcaption>
+										</figure>
+									</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-948a0ba elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="948a0ba" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-52bb402" data-id="52bb402" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-d8b44c3 elementor-widget elementor-widget-text-editor" data-id="d8b44c3" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>После того, как действие добавлено, ему необходимо назначить клавишу. Для этого нажмите кнопку <strong>+</strong>, как показано на <em>рисунке 15.</em></p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-f5dd6af elementor-widget elementor-widget-image" data-id="f5dd6af" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+												<figure class="wp-caption">
+										<img loading="lazy" decoding="async" width="1024" height="630" src="./GODOT. Урок №2. Основы GDScript. — Материалы Journal_files/Рисунок15-2-1024x630.png" class="attachment-large size-large wp-image-54133" alt="" srcset="https://top-academy.site/wp-content/uploads/2025/08/Рисунок15-2-1024x630.png 1024w, https://top-academy.site/wp-content/uploads/2025/08/Рисунок15-2-300x184.png 300w, https://top-academy.site/wp-content/uploads/2025/08/Рисунок15-2-768x472.png 768w, https://top-academy.site/wp-content/uploads/2025/08/Рисунок15-2.png 1202w" sizes="auto, (max-width: 1024px) 100vw, 1024px">											<figcaption class="widget-image-caption wp-caption-text">Рисунок 15</figcaption>
+										</figure>
+									</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-11b04b3 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="11b04b3" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-549e5e7" data-id="549e5e7" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-0632ca8 elementor-widget elementor-widget-text-editor" data-id="0632ca8" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>В новом окне в разделе <strong>клавиши ввода</strong> найдите клавишу <strong>Shift</strong> <em>(рис. 16). </em>И нажмите <strong>ОК</strong>.</p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-60adda6 elementor-widget elementor-widget-image" data-id="60adda6" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+												<figure class="wp-caption">
+										<img loading="lazy" decoding="async" width="552" height="440" src="./GODOT. Урок №2. Основы GDScript. — Материалы Journal_files/Рисунок16-3.png" class="attachment-large size-large wp-image-54134" alt="" srcset="https://top-academy.site/wp-content/uploads/2025/08/Рисунок16-3.png 552w, https://top-academy.site/wp-content/uploads/2025/08/Рисунок16-3-300x239.png 300w" sizes="auto, (max-width: 552px) 100vw, 552px">											<figcaption class="widget-image-caption wp-caption-text">Рисунок 16</figcaption>
+										</figure>
+									</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-d6a8a8b elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="d6a8a8b" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-6fe95aa" data-id="6fe95aa" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-1160775 elementor-widget elementor-widget-text-editor" data-id="1160775" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>После чего появится запись – клавиша <strong>Shift</strong> будет соответствовать команде <strong>“ui_shift”</strong>.</p><hr><p>Поздравляю! Вы только что сделали то, что делают настоящие разработчики игр — вы вдохнули жизнь в персонажа с помощью кода. Он больше не просто картинка, он слушается ваших команд, у него есть скорость и свой собственный мозг — скрипт. Вы научились управлять движением. В следующий раз мы продолжим развивать нашего героя и научим его новым трюкам!</p>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				</div>
+		</div></div>
+</main>
+</div>
+</div>
+</div>
+</div>
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/jadro\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+			<script>
+				const lazyloadRunObserver = () => {
+					const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` );
+					const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {
+						entries.forEach( ( entry ) => {
+							if ( entry.isIntersecting ) {
+								let lazyloadBackground = entry.target;
+								if( lazyloadBackground ) {
+									lazyloadBackground.classList.add( 'e-lazyloaded' );
+								}
+								lazyloadBackgroundObserver.unobserve( entry.target );
+							}
+						});
+					}, { rootMargin: '200px 0px 200px 0px' } );
+					lazyloadBackgrounds.forEach( ( lazyloadBackground ) => {
+						lazyloadBackgroundObserver.observe( lazyloadBackground );
+					} );
+				};
+				const events = [
+					'DOMContentLoaded',
+					'elementor/lazyload/observe',
+				];
+				events.forEach( ( event ) => {
+					document.addEventListener( event, lazyloadRunObserver );
+				} );
+			</script>
+			<script src="./GODOT. Урок №2. Основы GDScript. — Материалы Journal_files/prism-core.min.js.Без названия" id="prismjs_core-js"></script>
+<script src="./GODOT. Урок №2. Основы GDScript. — Материалы Journal_files/prism-autoloader.min.js.Без названия" id="prismjs_loader-js"></script>
+<script src="./GODOT. Урок №2. Основы GDScript. — Материалы Journal_files/prism-normalize-whitespace.min.js.Без названия" id="prismjs_normalize-js"></script>
+<script src="./GODOT. Урок №2. Основы GDScript. — Материалы Journal_files/prism-toolbar.min.js.Без названия" id="prismjs_toolbar-js"></script>
+<script src="./GODOT. Урок №2. Основы GDScript. — Материалы Journal_files/prism-copy-to-clipboard.min.js.Без названия" id="prismjs_copy_to_clipboard-js"></script>
+<script id="wp-block-template-skip-link-js-after">
+	( function() {
+		var skipLinkTarget = document.querySelector( 'main' ),
+			sibling,
+			skipLinkTargetID,
+			skipLink;
+
+		// Early exit if a skip-link target can't be located.
+		if ( ! skipLinkTarget ) {
+			return;
+		}
+
+		/*
+		 * Get the site wrapper.
+		 * The skip-link will be injected in the beginning of it.
+		 */
+		sibling = document.querySelector( '.wp-site-blocks' );
+
+		// Early exit if the root element was not found.
+		if ( ! sibling ) {
+			return;
+		}
+
+		// Get the skip-link target's ID, and generate one if it doesn't exist.
+		skipLinkTargetID = skipLinkTarget.id;
+		if ( ! skipLinkTargetID ) {
+			skipLinkTargetID = 'wp--skip-link--target';
+			skipLinkTarget.id = skipLinkTargetID;
+		}
+
+		// Create the skip link.
+		skipLink = document.createElement( 'a' );
+		skipLink.classList.add( 'skip-link', 'screen-reader-text' );
+		skipLink.id = 'wp-skip-link';
+		skipLink.href = '#' + skipLinkTargetID;
+		skipLink.innerText = 'Перейти к содержимому';
+
+		// Inject the skip link.
+		sibling.parentElement.insertBefore( skipLink, sibling );
+	}() );
+	
+</script>
+<script id="wp-postratings-js-extra">
+var ratingsL10n = {"plugin_url":"https:\/\/top-academy.site\/wp-content\/plugins\/wp-postratings","ajax_url":"https:\/\/top-academy.site\/wp-admin\/admin-ajax.php","text_wait":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u043d\u0435 \u0433\u043e\u043b\u043e\u0441\u0443\u0439\u0442\u0435 \u0437\u0430 \u043d\u0435\u0441\u043a\u043e\u043b\u044c\u043a\u043e \u0437\u0430\u043f\u0438\u0441\u0435\u0439 \u043e\u0434\u043d\u043e\u0432\u0440\u0435\u043c\u0435\u043d\u043d\u043e.","image":"stars_crystal","image_ext":"gif","max":"5","show_loading":"1","show_fading":"1","custom":"0"};
+var ratings_mouseover_image=new Image();ratings_mouseover_image.src="https://top-academy.site/wp-content/plugins/wp-postratings/images/stars_crystal/rating_over.gif";;
+</script>
+<script src="./GODOT. Урок №2. Основы GDScript. — Материалы Journal_files/postratings-js.js.Без названия" id="wp-postratings-js"></script>
+<script src="./GODOT. Урок №2. Основы GDScript. — Материалы Journal_files/webpack-pro.runtime.min.js.Без названия" id="elementor-pro-webpack-runtime-js"></script>
+<script src="./GODOT. Урок №2. Основы GDScript. — Материалы Journal_files/webpack.runtime.min.js.Без названия" id="elementor-webpack-runtime-js"></script>
+<script src="./GODOT. Урок №2. Основы GDScript. — Материалы Journal_files/frontend-modules.min.js.Без названия" id="elementor-frontend-modules-js"></script>
+<script src="./GODOT. Урок №2. Основы GDScript. — Материалы Journal_files/hooks.min.js.Без названия" id="wp-hooks-js"></script>
+<script src="./GODOT. Урок №2. Основы GDScript. — Материалы Journal_files/i18n.min.js.Без названия" id="wp-i18n-js"></script>
+<script id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+</script>
+<script id="elementor-pro-frontend-js-before">
+var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/top-academy.site\/wp-admin\/admin-ajax.php","nonce":"29376d0f4b","urls":{"assets":"https:\/\/top-academy.site\/wp-content\/plugins\/elementor-pro\/assets\/","rest":"https:\/\/top-academy.site\/wp-json\/"},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"}},"facebook_sdk":{"lang":"ru_RU","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/top-academy.site\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
+</script>
+<script src="./GODOT. Урок №2. Основы GDScript. — Материалы Journal_files/frontend.min.js.Без названия" id="elementor-pro-frontend-js"></script>
+<script src="./GODOT. Урок №2. Основы GDScript. — Материалы Journal_files/core.min.js.Без названия" id="jquery-ui-core-js"></script>
+<script id="elementor-frontend-js-before">
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"\u041f\u043e\u0434\u0435\u043b\u0438\u0442\u044c\u0441\u044f \u0432 Facebook","shareOnTwitter":"\u041f\u043e\u0434\u0435\u043b\u0438\u0442\u044c\u0441\u044f \u0432 Twitter","pinIt":"\u0417\u0430\u043f\u0438\u043d\u0438\u0442\u044c","download":"\u0421\u043a\u0430\u0447\u0430\u0442\u044c","downloadImage":"\u0421\u043a\u0430\u0447\u0430\u0442\u044c \u0438\u0437\u043e\u0431\u0440\u0430\u0436\u0435\u043d\u0438\u0435","fullscreen":"\u0412\u043e \u0432\u0435\u0441\u044c \u044d\u043a\u0440\u0430\u043d","zoom":"\u0423\u0432\u0435\u043b\u0438\u0447\u0435\u043d\u0438\u0435","share":"\u041f\u043e\u0434\u0435\u043b\u0438\u0442\u044c\u0441\u044f","playVideo":"\u041f\u0440\u043e\u0438\u0433\u0440\u0430\u0442\u044c \u0432\u0438\u0434\u0435\u043e","previous":"\u041d\u0430\u0437\u0430\u0434","next":"\u0414\u0430\u043b\u0435\u0435","close":"\u0417\u0430\u043a\u0440\u044b\u0442\u044c","a11yCarouselPrevSlideMessage":"\u041f\u0440\u0435\u0434\u044b\u0434\u0443\u0449\u0438\u0439 \u0441\u043b\u0430\u0439\u0434","a11yCarouselNextSlideMessage":"\u0421\u043b\u0435\u0434\u0443\u044e\u0449\u0438\u0439 \u0441\u043b\u0430\u0439\u0434","a11yCarouselFirstSlideMessage":"\u042d\u0442\u043e \u043f\u0435\u0440\u0432\u044b\u0439 \u0441\u043b\u0430\u0439\u0434","a11yCarouselLastSlideMessage":"\u042d\u0442\u043e \u043f\u043e\u0441\u043b\u0435\u0434\u043d\u0438\u0439 \u0441\u043b\u0430\u0439\u0434","a11yCarouselPaginationBulletMessage":"\u041f\u0435\u0440\u0435\u0439\u0442\u0438 \u043a \u0441\u043b\u0430\u0439\u0434\u0443"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"\u041c\u043e\u0431\u0438\u043b\u044c\u043d\u044b\u0439 - \u043a\u043d\u0438\u0436\u043d\u0430\u044f \u043e\u0440\u0438\u0435\u043d\u0442\u0430\u0446\u0438\u044f","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"\u041c\u043e\u0431\u0438\u043b\u044c\u043d\u044b\u0439 - \u0430\u043b\u044c\u0431\u043e\u043c\u043d\u0430\u044f \u043e\u0440\u0438\u0435\u043d\u0442\u0430\u0446\u0438\u044f","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"\u041f\u043b\u0430\u043d\u0448\u0435\u0442 - \u043a\u043d\u0438\u0436\u043d\u0430\u044f \u043e\u0440\u0438\u0435\u043d\u0442\u0430\u0446\u0438\u044f","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"\u041f\u043b\u0430\u043d\u0448\u0435\u0442 - \u0430\u043b\u044c\u0431\u043e\u043c\u043d\u0430\u044f \u043e\u0440\u0438\u0435\u043d\u0442\u0430\u0446\u0438\u044f","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"\u041d\u043e\u0443\u0442\u0431\u0443\u043a","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"\u0428\u0438\u0440\u043e\u043a\u043e\u0444\u043e\u0440\u043c\u0430\u0442\u043d\u044b\u0435","value":2400,"default_value":2400,"direction":"min","is_enabled":false}},"hasCustomBreakpoints":false},"version":"3.27.2","is_static":false,"experimentalFeatures":{"additional_custom_breakpoints":true,"e_swiper_latest":true,"e_onboarding":true,"theme_builder_v2":true,"home_screen":true,"landing-pages":true,"editor_v2":true,"link-in-bio":true,"floating-buttons":true,"page-transitions":true,"notes":true,"loop":true,"form-submissions":true,"e_scroll_snap":true},"urls":{"assets":"https:\/\/top-academy.site\/wp-content\/plugins\/elementor\/assets\/","ajaxurl":"https:\/\/top-academy.site\/wp-admin\/admin-ajax.php","uploadUrl":"https:\/\/top-academy.site\/wp-content\/uploads"},"nonces":{"floatingButtonsClickTracking":"2569a5e859"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":54109,"title":"GODOT.%20%D0%A3%D1%80%D0%BE%D0%BA%20%E2%84%962.%20%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B%20GDScript.%20%E2%80%94%20%D0%9C%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%B0%D0%BB%D1%8B%20Journal","excerpt":"","featuredImage":false}};
+</script>
+<script src="./GODOT. Урок №2. Основы GDScript. — Материалы Journal_files/frontend.min(1).js.Без названия" id="elementor-frontend-js"></script><span id="elementor-device-mode" class="elementor-screen-only"></span>
+<script src="./GODOT. Урок №2. Основы GDScript. — Материалы Journal_files/preloaded-elements-handlers.min.js.Без названия" id="pro-preloaded-elements-handlers-js"></script><svg style="display: none;" class="e-font-icon-svg-symbols"></svg>
+
+
+</body></html>

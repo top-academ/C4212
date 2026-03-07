@@ -1,0 +1,1610 @@
+var AppClientAppData = {
+	"result": "SUCCESS",
+	"initparameters": "c_1=text%7Cprint%28%22%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82%21%20%D0%AF%20%D0%B7%D0%B0%D0%B3%D0%B0%D0%B4%D0%B0%D0%BB%20%D1%87%D0%B8%D1%81%D0%BB%D0%BE.%22%29%7C%7C0&c_2=text%7Csecret%20%3D%207%7C%7C0&c_3=text%7Cguess%20%3D%20None%7C%7C0&c_4=text%7Cwhile%20guess%20%21%3D%20secret%3A%7C%7C0&c_5=text%7C%20%20%20%20guess%20%3D%20int%28input%28%22%D0%92%D0%B2%D0%B5%D0%B4%D0%B8%D1%82%D0%B5%20%D1%87%D0%B8%D1%81%D0%BB%D0%BE%3A%20%22%29%29%7C%7C0&c_6=text%7C%20%20%20%20print%28%22%D0%9F%D0%BE%D0%BF%D1%80%D0%BE%D0%B1%D1%83%D0%B9%20%D0%B5%D1%89%D1%91%20%D1%80%D0%B0%D0%B7.%22%29%7C%7C0&c_7=text%7Cprint%28%22%D0%A2%D1%8B%20%D1%83%D0%B3%D0%B0%D0%B4%D0%B0%D0%BB%20%D1%87%D0%B8%D1%81%D0%BB%D0%BE%21%22%29%7C%7C0&display=%D0%9A%D0%B0%D1%80%D1%82%D0%BE%D1%87%D0%BA%D0%B8%20%D1%80%D0%B0%D0%B7%D0%BC%D0%B5%D1%89%D0%B5%D0%BD%D1%8B%20%D1%81%D0%B2%D0%BE%D0%B1%D0%BE%D0%B4%D0%BD%D0%BE%20%28%D1%80%D0%B0%D1%81%D0%BF%D0%BE%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%81%20%D0%B2%D0%B5%D1%80%D1%85%D0%BD%D0%B5%D0%B3%D0%BE%20%D0%BB%D0%B5%D0%B2%D0%BE%D0%B3%D0%BE%20%D0%BA%D1%80%D0%B0%D1%8F%20%D0%B4%D0%BE%20%D0%BD%D0%B8%D0%B6%D0%BD%D0%B5%D0%B3%D0%BE%20%D0%BB%D0%B5%D0%B2%D0%BE%D0%B3%D0%BE%29&feedback=%D0%97%D0%B4%D0%BE%D1%80%D0%BE%D0%B2%D0%BE%2C%20%D1%82%D1%8B%20%D0%B2%D0%B5%D1%80%D0%BD%D0%BE%20%D0%B2%D1%8B%D0%BF%D0%BE%D0%BB%D0%BD%D0%B8%D0%BB%20%D0%B7%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5.",
+	"title": "Урок 5. Цикл while",
+	"tool": "70",
+	"helptext": "",
+	"tasktext": "В этом упражнении тебе нужно расположить строки кода в правильной последовательности.",
+	"formlanguage": "RU",
+	"language": "RU",
+	"parameters": [
+		{
+			"t": "list",
+			"label": "%Karten%",
+			"description": "%KartenBeschreibung%",
+			"name": "cards",
+			"min": "1",
+			"max": 20,
+			"addtext": "Добавить следующий элемент",
+			"children": [
+				{
+					"t": "parameter",
+					"value": "",
+					"width": "",
+					"height": "",
+					"name": "c_#",
+					"label": "%Karte% #",
+					"type": "media",
+					"description": "",
+					"media": "image|video|audio|text|speech",
+					"usehint": "true",
+					"usehintTTS": "true"
+				}
+			]
+		},
+		{
+			"t": "parameter",
+			"value": "%frei%|%vertikal%|%horizontal%",
+			"width": "",
+			"height": "",
+			"name": "display",
+			"label": "%anzeige%",
+			"type": "select",
+			"description": "%anzeigeBeschreibung%"
+		},
+		{
+			"t": "parameter",
+			"value": "%FeedbackValue%",
+			"width": "",
+			"height": "",
+			"name": "feedback",
+			"label": "%Feedback%",
+			"type": "textarea",
+			"description": "%FeedbackBeschreibung%"
+		},
+		{
+			"t": "parameter",
+			"value": "false",
+			"width": "",
+			"height": "",
+			"name": "hideNum",
+			"label": "%hideNum%",
+			"type": "check",
+			"description": "%hideNumBeschreibung%"
+		}
+	],
+	"translation": [
+		{
+			"id": "APP_TITLE",
+			"language": "DE",
+			"value": "Einfache Reihenfolge"
+		},
+		{
+			"id": "APP_TITLE",
+			"language": "EN",
+			"value": "Simple order"
+		},
+		{
+			"id": "APP_DESCRIPTION",
+			"language": "DE",
+			"value": "Mit dieser Vorlage müssen Texte, Bilder, Audios oder Videos in eine einfache Reihenfolge gebracht werden."
+		},
+		{
+			"id": "APP_DESCRIPTION",
+			"language": "EN",
+			"value": "With this template texts, images, audio clips and videos must be placed in order."
+		},
+		{
+			"id": "hideNum",
+			"language": "DE",
+			"value": "Zahlen ausblenden"
+		},
+		{
+			"id": "hideNum",
+			"language": "EN",
+			"value": "Hide numbers"
+		},
+		{
+			"id": "hideNumBeschreibung",
+			"language": "DE",
+			"value": "An den Karten werden automatisch kleine Zahlen von 1 bis n angezeigt. Diese können auf Wunsch ausgeblendet werden."
+		},
+		{
+			"id": "hideNumBeschreibung",
+			"language": "EN",
+			"value": "Small numbers from 1 to n are automatically displayed on the cards. These can be hidden on request."
+		},
+		{
+			"id": "anzeige",
+			"language": "DE",
+			"value": "Elemente anzeigen"
+		},
+		{
+			"id": "anzeige",
+			"language": "EN",
+			"value": "Display elements"
+		},
+		{
+			"id": "anzeigeBeschreibung",
+			"language": "DE",
+			"value": "Wählen Sie, auf welche Art die Elemente angezeigt werden sollen."
+		},
+		{
+			"id": "anzeigeBeschreibung",
+			"language": "EN",
+			"value": "Select in which way the elements are displayed."
+		},
+		{
+			"id": "frei",
+			"language": "DE",
+			"value": "Karten frei platziert (Anordnung von links oben nach rechts unten)"
+		},
+		{
+			"id": "frei",
+			"language": "EN",
+			"value": "Cards free placed (order from upper left to lower right corner)"
+		},
+		{
+			"id": "horizontal",
+			"language": "DE",
+			"value": "Karten fest horizontal platziert (Anordnung von links nach rechts)"
+		},
+		{
+			"id": "horizontal",
+			"language": "EN",
+			"value": "Cards fixed placed horizontal (order left right )"
+		},
+		{
+			"id": "vertikal",
+			"language": "DE",
+			"value": "Karten fest vertikal platziert (Anordnung von oben nach unten)"
+		},
+		{
+			"id": "vertikal",
+			"language": "EN",
+			"value": "Cards fixed placed vertical (order top down)"
+		},
+		{
+			"id": "Prüfen",
+			"language": "DE",
+			"value": "Lösung überprüfen"
+		},
+		{
+			"id": "Prüfen",
+			"language": "EN",
+			"value": "Check solution"
+		},
+		{
+			"id": "Karte",
+			"language": "DE",
+			"value": "Karte"
+		},
+		{
+			"id": "Karte",
+			"language": "EN",
+			"value": "Card"
+		},
+		{
+			"id": "Karten",
+			"language": "DE",
+			"value": "Karten"
+		},
+		{
+			"id": "Karten",
+			"language": "EN",
+			"value": "Cards"
+		},
+		{
+			"id": "KartenBeschreibung",
+			"language": "DE",
+			"value": "Geben Sie die Elemente an, die in die angegebene Reihenfolge gebracht werden sollen. Die hier im Formular angegebene Reihenfolge stellt gleichzeitig die richtige Lösung dar."
+		},
+		{
+			"id": "KartenBeschreibung",
+			"language": "EN",
+			"value": "Provide the cards to be sorted here. The here given order is the correct solution."
+		},
+		{
+			"id": "Feedback",
+			"language": "DE",
+			"value": "Feedback"
+		},
+		{
+			"id": "Feedback",
+			"language": "EN",
+			"value": "Feedback"
+		},
+		{
+			"id": "FeedbackBeschreibung",
+			"language": "DE",
+			"value": "Geben Sie einen Text an, der eingeblendet wird, wenn die richtige Lösung gefunden wurde."
+		},
+		{
+			"id": "FeedbackBeschreibung",
+			"language": "EN",
+			"value": "Provide a feedback text which is displayed when the solution is found."
+		},
+		{
+			"id": "FeedbackValue",
+			"language": "DE",
+			"value": "Prima, du hast die richtige Lösung gefunden."
+		},
+		{
+			"id": "FeedbackValue",
+			"language": "EN",
+			"value": "Great, you found the right solution."
+		},
+		{
+			"id": "Prüfen",
+			"language": "FR",
+			"value": "Vérifier la réponse !"
+		},
+		{
+			"id": "Prüfen",
+			"language": "IT",
+			"value": "Verifica la soluzione"
+		},
+		{
+			"id": "Prüfen",
+			"language": "RU",
+			"value": "Перепроверить решение"
+		},
+		{
+			"id": "Prüfen",
+			"language": "ES",
+			"value": "Ver solución"
+		},
+		{
+			"id": "Prüfen",
+			"language": "RM",
+			"value": "Controllar la sligiaziun"
+		},
+		{
+			"id": "Prüfen",
+			"language": "RO",
+			"value": "Verifică soluția "
+		},
+		{
+			"id": "Prüfen",
+			"language": "GL",
+			"value": "Comprobar a solución"
+		},
+		{
+			"id": "Prüfen",
+			"language": "PL",
+			"value": "Sprawdź rozwiązanie."
+		},
+		{
+			"id": "Prüfen",
+			"language": "BG",
+			"value": "Провери решението"
+		},
+		{
+			"id": "Prüfen",
+			"language": "ET",
+			"value": "Kontrollige lahendust"
+		},
+		{
+			"id": "Prüfen",
+			"language": "NL",
+			"value": "Oplossing controleren"
+		},
+		{
+			"id": "Prüfen",
+			"language": "TR",
+			"value": "Çözümü kontrol et"
+		},
+		{
+			"id": "Prüfen",
+			"language": "UK",
+			"value": "Перевірити рішення"
+		},
+		{
+			"id": "Prüfen",
+			"language": "GE",
+			"value": "პასუხის შემოწმება"
+		},
+		{
+			"id": "Prüfen",
+			"language": "BS",
+			"value": "Provjera rješenja"
+		},
+		{
+			"id": "Prüfen",
+			"language": "GR",
+			"value": "Έλεγξε τη λύση"
+		},
+		{
+			"id": "Feedback",
+			"language": "FR",
+			"value": "Feedback"
+		},
+		{
+			"id": "Feedback",
+			"language": "IT",
+			"value": "Feedback"
+		},
+		{
+			"id": "Feedback",
+			"language": "RU",
+			"value": "Обратная связь"
+		},
+		{
+			"id": "Feedback",
+			"language": "RM",
+			"value": "Resun"
+		},
+		{
+			"id": "Feedback",
+			"language": "RO",
+			"value": "Feedback"
+		},
+		{
+			"id": "Feedback",
+			"language": "PL",
+			"value": "Informacja zwrotna."
+		},
+		{
+			"id": "Feedback",
+			"language": "BG",
+			"value": "Обратна връзка"
+		},
+		{
+			"id": "Feedback",
+			"language": "ET",
+			"value": "tagasiside"
+		},
+		{
+			"id": "Feedback",
+			"language": "NL",
+			"value": "Feedback"
+		},
+		{
+			"id": "Feedback",
+			"language": "TR",
+			"value": "Geri dönüşüm"
+		},
+		{
+			"id": "Feedback",
+			"language": "UK",
+			"value": "Зворотній зв'язок"
+		},
+		{
+			"id": "Feedback",
+			"language": "GE",
+			"value": "უკუკავშირი"
+		},
+		{
+			"id": "Feedback",
+			"language": "BS",
+			"value": "Feedback"
+		},
+		{
+			"id": "Feedback",
+			"language": "GR",
+			"value": "Μήνυμα επιβράβευσης"
+		},
+		{
+			"id": "FeedbackBeschreibung",
+			"language": "FR",
+			"value": "Saisissez le texte qui s'affichera lorsque la bonne solution aura été trouvée."
+		},
+		{
+			"id": "FeedbackBeschreibung",
+			"language": "IT",
+			"value": "Indica un testo che verrà inserito quando verrà trovata la soluzione corretta."
+		},
+		{
+			"id": "FeedbackBeschreibung",
+			"language": "RU",
+			"value": "Задайте текст, который будет появляться при правильном решении. "
+		},
+		{
+			"id": "FeedbackBeschreibung",
+			"language": "RM",
+			"value": "Endatescha in text che vegn mussaus sche la sligiaziun ei correcta."
+		},
+		{
+			"id": "FeedbackBeschreibung",
+			"language": "RO",
+			"value": "Introduceți un text care este vizibil atunci când soluția este corectă"
+		},
+		{
+			"id": "FeedbackBeschreibung",
+			"language": "PL",
+			"value": "Wpisz tekst, który pojawi się, gdy zostanie znalezione rozwiązanie."
+		},
+		{
+			"id": "FeedbackBeschreibung",
+			"language": "BG",
+			"value": "Осигурете текстова обратна връзка, която се показва, когато се намери решение."
+		},
+		{
+			"id": "FeedbackBeschreibung",
+			"language": "ET",
+			"value": "Sisestage tekst, mis kuvatakse õige lahenduse korral."
+		},
+		{
+			"id": "FeedbackBeschreibung",
+			"language": "NL",
+			"value": "Voer een tekst in die wordt weergegeven wanneer de juiste oplossing is gevonden."
+		},
+		{
+			"id": "FeedbackBeschreibung",
+			"language": "TR",
+			"value": "Doğru çözüldüğünde gösterilmesini istediğiniz bir metni girin"
+		},
+		{
+			"id": "FeedbackBeschreibung",
+			"language": "UK",
+			"value": "Напишіть текст зворотнього зв'язку, який з'явиться, коли правильне рішення буде знайдено."
+		},
+		{
+			"id": "FeedbackBeschreibung",
+			"language": "GE",
+			"value": "გთხოვთ შეიყვანოთ სიტყვა, რომელიც ეკრანზე აისახება სწორი პასუხის შემთხვევაში."
+		},
+		{
+			"id": "FeedbackBeschreibung",
+			"language": "BS",
+			"value": "Unesite feedback tekst koji će biti prikazan kada bude pronađeno konačno rješenje."
+		},
+		{
+			"id": "FeedbackValue",
+			"language": "FR",
+			"value": "Bravo, tu as trouvé la bonne solution !"
+		},
+		{
+			"id": "FeedbackValue",
+			"language": "IT",
+			"value": "Fantastico, hai trovato la risposta giusta."
+		},
+		{
+			"id": "FeedbackValue",
+			"language": "RU",
+			"value": "Здорово, ты верно выполнил задание."
+		},
+		{
+			"id": "FeedbackValue",
+			"language": "RM",
+			"value": "Bravo, ti has sligiau tut endretg!"
+		},
+		{
+			"id": "FeedbackValue",
+			"language": "RO",
+			"value": "Super, ai găsit soluția corectă! "
+		},
+		{
+			"id": "FeedbackValue",
+			"language": "GL",
+			"value": "Moi ben, atopáchelas todas!"
+		},
+		{
+			"id": "FeedbackValue",
+			"language": "PL",
+			"value": "Świetnie, znalazłeś właściwe rozwiązanie."
+		},
+		{
+			"id": "FeedbackValue",
+			"language": "BG",
+			"value": "Поздравления! Ти изпълни вярно задачата. "
+		},
+		{
+			"id": "FeedbackValue",
+			"language": "ET",
+			"value": "Tubli, sa oled leidnud õige lahenduse."
+		},
+		{
+			"id": "FeedbackValue",
+			"language": "NL",
+			"value": "Prima, u heeft de juiste oplossing gevonden."
+		},
+		{
+			"id": "FeedbackValue",
+			"language": "TR",
+			"value": "Maşaallah, doğru çözümü buldunuz."
+		},
+		{
+			"id": "FeedbackValue",
+			"language": "UK",
+			"value": "Чудово, правильне рішення знайдено!"
+		},
+		{
+			"id": "FeedbackValue",
+			"language": "GE",
+			"value": "კარგია! თქვენ ყველაფერი სწორად გამოიცანით!"
+		},
+		{
+			"id": "FeedbackValue",
+			"language": "BS",
+			"value": "Odlično, rješenje je tačno."
+		},
+		{
+			"id": "FeedbackValue",
+			"language": "SV",
+			"value": "Grattis, du har klarat av spelet!"
+		},
+		{
+			"id": "FeedbackValue",
+			"language": "GR",
+			"value": "Τα πήγες ΤΕΛΕΙΑ!!! Βρήκες τη σωστή λύση"
+		},
+		{
+			"id": "APP_TITLE",
+			"language": "BY",
+			"value": "Па парадку"
+		},
+		{
+			"id": "APP_DESCRIPTION",
+			"language": "BY",
+			"value": "У гэтым шаблоне тэксты, малюнкі і відэа павінны быць размешчаны па парадку."
+		},
+		{
+			"id": "Prüfen",
+			"language": "BY",
+			"value": "Праверыць рашэнне"
+		},
+		{
+			"id": "Karten",
+			"language": "BY",
+			"value": "Карткі"
+		},
+		{
+			"id": "KartenBeschreibung",
+			"language": "BY",
+			"value": "Расстаўце элементы практыкавання. Ваш парадак будзе лічыцца як правільны адказ."
+		},
+		{
+			"id": "FeedbackBeschreibung",
+			"language": "BY",
+			"value": "Напішыце тэкст, які будзе паказвацца пры правільным выкананні практыкавання."
+		},
+		{
+			"id": "FeedbackValue",
+			"language": "BY",
+			"value": "Малайчына! Практыкаванне выканана"
+		},
+		{
+			"id": "Karte",
+			"language": "BY",
+			"value": "Картка"
+		},
+		{
+			"id": "Feedback",
+			"language": "BY",
+			"value": "Зваротная сувязь"
+		},
+		{
+			"id": "APP_TITLE",
+			"language": "UK",
+			"value": "Просте упорядкування"
+		},
+		{
+			"id": "APP_DESCRIPTION",
+			"language": "UK",
+			"value": "Потрібно розставити у правильному порядку тексти, зображення, аудіо-кліпи та відео-фрагменти"
+		},
+		{
+			"id": "APP_TITLE",
+			"language": "ET",
+			"value": "Lihtne järjestamine"
+		},
+		{
+			"id": "APP_TITLE",
+			"language": "PL",
+			"value": "Kolejność"
+		},
+		{
+			"id": "APP_DESCRIPTION",
+			"language": "PL",
+			"value": "W tym szablonie, teksty, obrazy, nagrania i filmy muszą być umieszczone w odpowiednim porządku."
+		},
+		{
+			"id": "APP_DESCRIPTION",
+			"language": "RU",
+			"value": "С помощью этого шаблона тексты, картинки, аудио композиции и видео ролики можно разместить в определенном порядке."
+		},
+		{
+			"id": "APP_TITLE",
+			"language": "RU",
+			"value": "Простой порядок"
+		},
+		{
+			"id": "APP_DESCRIPTION",
+			"language": "FR",
+			"value": "Modèle où il faut classer des textes, images, fichiers audio ou vidéo dans un ordre donné."
+		},
+		{
+			"id": "APP_TITLE",
+			"language": "TR",
+			"value": "Normal sıralama"
+		},
+		{
+			"id": "APP_DESCRIPTION",
+			"language": "TR",
+			"value": "Bu kalıp ile metinler, resimler, ses ve film dosyaları normal sıralama ile düzenlenmek zorundadır."
+		},
+		{
+			"id": "Karten",
+			"language": "TR",
+			"value": "Kartlar"
+		},
+		{
+			"id": "Karte",
+			"language": "TR",
+			"value": "Kart"
+		},
+		{
+			"id": "KartenBeschreibung",
+			"language": "TR",
+			"value": "Belirlenen sıralamaya göre düzenlenmesi gereken ögeleri girin. Bu formda öngörülen sıralama, aynı zamanda doğru çözümün sıralamasını belirlemektedir."
+		},
+		{
+			"id": "APP_TITLE",
+			"language": "HU",
+			"value": "Egyszerű sorbarendezés"
+		},
+		{
+			"id": "APP_DESCRIPTION",
+			"language": "HU",
+			"value": "Ezzel a sablonnal szövegeket, képeket, hangokat vagy videókat kell egyszerűen sorbarendezni."
+		},
+		{
+			"id": "Prüfen",
+			"language": "HU",
+			"value": "Megoldás ellenőrzése "
+		},
+		{
+			"id": "Karte",
+			"language": "HU",
+			"value": "Kártya"
+		},
+		{
+			"id": "Karten",
+			"language": "HU",
+			"value": "Kártyák"
+		},
+		{
+			"id": "KartenBeschreibung",
+			"language": "HU",
+			"value": "Adja meg az elemeket, amelyeket helyes sorrendbe kell rakni. Az itt megadott sorrend egyidejűleg a helyes megoldás sorrendje is."
+		},
+		{
+			"id": "Feedback",
+			"language": "HU",
+			"value": "Visszajelzés"
+		},
+		{
+			"id": "FeedbackBeschreibung",
+			"language": "HU",
+			"value": "Adjon meg egy szöveget, ami akkor jelenik meg, ha megtalálják a helyes megoldást."
+		},
+		{
+			"id": "FeedbackValue",
+			"language": "HU",
+			"value": "Remek, megtaláltad a helyes megoldást!"
+		},
+		{
+			"id": "APP_TITLE",
+			"language": "FR",
+			"value": "Ordre simple"
+		},
+		{
+			"id": "Prüfen",
+			"language": "PT",
+			"value": "verificar solução"
+		},
+		{
+			"id": "Feedback",
+			"language": "PT",
+			"value": "Feedback"
+		},
+		{
+			"id": "FeedbackBeschreibung",
+			"language": "PT",
+			"value": "Fornecer um texto de feedback que é exibido quando a solução é encontrada."
+		},
+		{
+			"id": "FeedbackValue",
+			"language": "PT",
+			"value": "Óptimo, encontrou a solução correcta"
+		},
+		{
+			"id": "Karte",
+			"language": "FR",
+			"value": "Carte"
+		},
+		{
+			"id": "Karten",
+			"language": "FR",
+			"value": "Cartes"
+		},
+		{
+			"id": "KartenBeschreibung",
+			"language": "FR",
+			"value": "C'est ici que vous définissez les éléments à ordonner. L'ordre donné ici est considéré comme étant correct."
+		},
+		{
+			"id": "Karte",
+			"language": "PL",
+			"value": "Karta "
+		},
+		{
+			"id": "KartenBeschreibung",
+			"language": "PL",
+			"value": "Określ elementy, które mają być umieszczone w odpowiednim porządku. Kolejność wskazana tutaj w formularzu stanowi również odpowiednie rozwiązanie. "
+		},
+		{
+			"id": "Karten",
+			"language": "PL",
+			"value": "Karty"
+		},
+		{
+			"id": "APP_DESCRIPTION",
+			"language": "BG",
+			"value": "С помощта на този шаблон текстове, картинки, аудио и видео може да се подреждат в определен ред."
+		},
+		{
+			"id": "APP_TITLE",
+			"language": "BG",
+			"value": "Подреждане"
+		},
+		{
+			"id": "Karte",
+			"language": "BG",
+			"value": "карта"
+		},
+		{
+			"id": "Karten",
+			"language": "BG",
+			"value": "карти"
+		},
+		{
+			"id": "KartenBeschreibung",
+			"language": "BG",
+			"value": "Посочете елементите, които трябва да бъдат поставени в определен ред. Редът тук представлява правилното решение."
+		},
+		{
+			"id": "anzeige",
+			"language": "UK",
+			"value": "Перегляд елементів"
+		},
+		{
+			"id": "anzeigeBeschreibung",
+			"language": "UK",
+			"value": "Оберіть спосіб, у який відображаються елементи"
+		},
+		{
+			"id": "Karte",
+			"language": "UK",
+			"value": "Картка"
+		},
+		{
+			"id": "frei",
+			"language": "UK",
+			"value": "Картки розміщені вільно (зліва згори вниз праворуч)"
+		},
+		{
+			"id": "vertikal",
+			"language": "UK",
+			"value": "Картки розміщені вертикально (згори вниз)"
+		},
+		{
+			"id": "Karten",
+			"language": "UK",
+			"value": "Картки"
+		},
+		{
+			"id": "KartenBeschreibung",
+			"language": "UK",
+			"value": "Вкажіть елементи, які будуть розміщені у зазначеному порядку. Порядок, вказаний на бланку є правильним рішенням."
+		},
+		{
+			"id": "horizontal",
+			"language": "UK",
+			"value": "Картки розміщені горизонтально (зліва направо)"
+		},
+		{
+			"id": "anzeige",
+			"language": "TR",
+			"value": "Ögeleri göster"
+		},
+		{
+			"id": "anzeigeBeschreibung",
+			"language": "TR",
+			"value": "Ögelerin ne şekilde gösterileceğini belirle."
+		},
+		{
+			"id": "frei",
+			"language": "TR",
+			"value": "Kartları serbest yerleştirme (Düzenleme sol üst köşeden sağ alt köşeye doğru)"
+		},
+		{
+			"id": "horizontal",
+			"language": "TR",
+			"value": "Kartları sabit yatay yerleştirme  (Düzenleme soldan sağa doğru)"
+		},
+		{
+			"id": "vertikal",
+			"language": "TR",
+			"value": "Kartları sabit dikey yerleştirme  (Düzenleme yukarıdan aşağıya doğru)"
+		},
+		{
+			"id": "anzeigeBeschreibung",
+			"language": "FR",
+			"value": "Sélectionnez la manière dont les éléments sont affichés."
+		},
+		{
+			"id": "Feedback",
+			"language": "ES",
+			"value": "Retroalimentación"
+		},
+		{
+			"id": "FeedbackValue",
+			"language": "ES",
+			"value": "¡Enhorabuena! Lograste dar con la(s) respuesta(s) correcta(s)."
+		},
+		{
+			"id": "APP_DESCRIPTION",
+			"language": "IT",
+			"value": "In questo template testo, immagini, audio o video devono essere portati in una semplice sequenza."
+		},
+		{
+			"id": "horizontal",
+			"language": "IT",
+			"value": "Elementi posizionati orizzontalmente (da sinistra a destra)"
+		},
+		{
+			"id": "APP_TITLE",
+			"language": "IT",
+			"value": "Ordine facile"
+		},
+		{
+			"id": "anzeige",
+			"language": "IT",
+			"value": "Mostra elementi."
+		},
+		{
+			"id": "vertikal",
+			"language": "IT",
+			"value": "Elementi posizionati verticalmente (dall'alto verso il basso)"
+		},
+		{
+			"id": "Karten",
+			"language": "IT",
+			"value": "Mappa"
+		},
+		{
+			"id": "frei",
+			"language": "IT",
+			"value": "Elementi posizionati liberamente (da sinistra in alto a destra in basso)"
+		},
+		{
+			"id": "anzeigeBeschreibung",
+			"language": "IT",
+			"value": "Seleziona il modo in cui vengono visualizzate le voci."
+		},
+		{
+			"id": "KartenBeschreibung",
+			"language": "IT",
+			"value": "Colloca le voci nell'ordine corretto L'ordine indicato sul modulo rappresenta la corretta soluzione."
+		},
+		{
+			"id": "Karte",
+			"language": "IT",
+			"value": "Mappa"
+		},
+		{
+			"id": "APP_TITLE",
+			"language": "GE",
+			"value": "უბრალო შეკვეთა"
+		},
+		{
+			"id": "APP_DESCRIPTION",
+			"language": "GE",
+			"value": "ამ შაბლონის მიხედვით ტექსტები, გამოსახულება, აუდიო ან ვიდეო უნდა განლაგდეს მარტივი თანმიმდევრობით."
+		},
+		{
+			"id": "anzeige",
+			"language": "GE",
+			"value": "ვაჩვენოთ ელემენტები"
+		},
+		{
+			"id": "anzeigeBeschreibung",
+			"language": "GE",
+			"value": "აირჩიეთ ელემენტების ასახვის მეთოდი"
+		},
+		{
+			"id": "frei",
+			"language": "GE",
+			"value": "ბარათები ნებისმიერადაა განლაგებული (მაკეტი მაღლა მარცხნივ)"
+		},
+		{
+			"id": "horizontal",
+			"language": "GE",
+			"value": "ბარათები განლაგებულია ჰორიზონტალურად  (მიმართულება მარცხნიდან მარჯვნივ)"
+		},
+		{
+			"id": "vertikal",
+			"language": "GE",
+			"value": "ბარათები განლაგებულია ვერტიკალურად (ზემოდან ქვემოთ)"
+		},
+		{
+			"id": "Karte",
+			"language": "GE",
+			"value": "ბარათი"
+		},
+		{
+			"id": "Karten",
+			"language": "GE",
+			"value": "ბარათები"
+		},
+		{
+			"id": "KartenBeschreibung",
+			"language": "GE",
+			"value": "მიუთითეთ მოცემული თანმიმდევრობით დასალაგებელი ელემენტები. ფორმაში მოცემული ბრძანება ერთდროულად სწორი პასუხიცაა."
+		},
+		{
+			"id": "APP_TITLE",
+			"language": "RM",
+			"value": "Successiun sempla"
+		},
+		{
+			"id": "anzeigeBeschreibung",
+			"language": "RM",
+			"value": "Decida en tgei moda ch'ils elements duein vegnir mussai."
+		},
+		{
+			"id": "anzeige",
+			"language": "RM",
+			"value": "Mussar elements"
+		},
+		{
+			"id": "horizontal",
+			"language": "RM",
+			"value": "Plazzar cartas a moda horizontala (da sura a sut)"
+		},
+		{
+			"id": "vertikal",
+			"language": "RM",
+			"value": "Plazzar las cartas a oda verticala (da dretg a seniester)"
+		},
+		{
+			"id": "frei",
+			"language": "RM",
+			"value": "Plazzar libramein las cartas (da dretg a seniester)"
+		},
+		{
+			"id": "APP_DESCRIPTION",
+			"language": "RM",
+			"value": "Qun quei model san ins tschentar texts, maletgs ni videos en ina smpla successiun."
+		},
+		{
+			"id": "KartenBeschreibung",
+			"language": "RM",
+			"value": "Indichescha ils elements che duein vegnir mess en la successiun indicada. La successiun dil formular ei il medem mument era la dretga sligiaziun."
+		},
+		{
+			"id": "Karte",
+			"language": "RM",
+			"value": "Carta"
+		},
+		{
+			"id": "Karten",
+			"language": "RM",
+			"value": "Cartas"
+		},
+		{
+			"id": "anzeige",
+			"language": "HU",
+			"value": "Az elemek mutatása"
+		},
+		{
+			"id": "frei",
+			"language": "HU",
+			"value": "A kártyák keverve jelennek meg (a rendezés a bal felső saroktól a jobb alsó sarokig történik)."
+		},
+		{
+			"id": "anzeigeBeschreibung",
+			"language": "HU",
+			"value": "Válassza ki, hogy az elemek milyen módon jelenjenek meg!"
+		},
+		{
+			"id": "horizontal",
+			"language": "HU",
+			"value": "Az elemek vízszintesen jelennek meg (a rendezés balról jobbra történik)."
+		},
+		{
+			"id": "vertikal",
+			"language": "HU",
+			"value": "Az elemek függőlegesen jelennek meg (a rendezés fentről lefele történik)."
+		},
+		{
+			"id": "anzeige",
+			"language": "FR",
+			"value": "Afficher les éléments"
+		},
+		{
+			"id": "frei",
+			"language": "FR",
+			"value": "Cartes placées librement (disposition du coin supérieur gauche au coin inférieur droit)"
+		},
+		{
+			"id": "horizontal",
+			"language": "FR",
+			"value": "Cartes placées horizontalement (disposition de gauche à droite)"
+		},
+		{
+			"id": "vertikal",
+			"language": "FR",
+			"value": "Cartes placées verticalement (de haut en bas)"
+		},
+		{
+			"id": "APP_TITLE",
+			"language": "CZ",
+			"value": "Jednoduché řazení"
+		},
+		{
+			"id": "FeedbackBeschreibung",
+			"language": "CZ",
+			"value": "Vložte text, který se zobrazí po správném vyřešení úlohy. "
+		},
+		{
+			"id": "APP_DESCRIPTION",
+			"language": "CZ",
+			"value": "V této šabloně musí být texty, obrázky, zvuky nebo videa umístěny v jednoduché logické řadě."
+		},
+		{
+			"id": "anzeige",
+			"language": "CZ",
+			"value": "Ukázat prvky"
+		},
+		{
+			"id": "Karte",
+			"language": "CZ",
+			"value": "Karta"
+		},
+		{
+			"id": "Karten",
+			"language": "CZ",
+			"value": "Karty"
+		},
+		{
+			"id": "Feedback",
+			"language": "CZ",
+			"value": "Zpětná vazba"
+		},
+		{
+			"id": "FeedbackValue",
+			"language": "CZ",
+			"value": "Skvěle, toto je správné řešení!"
+		},
+		{
+			"id": "Prüfen",
+			"language": "CZ",
+			"value": "Zkontrolovat řešení"
+		},
+		{
+			"id": "KartenBeschreibung",
+			"language": "CZ",
+			"value": "Vložte prvky, které mají být seřazeny do správného pořadí. Pořadí uvedené ve formuláři je zároveň správným řešením."
+		},
+		{
+			"id": "anzeigeBeschreibung",
+			"language": "CZ",
+			"value": "Vyberte, které druhy prvků mají být zobrazeny."
+		},
+		{
+			"id": "frei",
+			"language": "CZ",
+			"value": "Karty umístěné volně (uspořádání zleva nahoře vpravo dolů)"
+		},
+		{
+			"id": "horizontal",
+			"language": "CZ",
+			"value": "Karty umístěné vodorovně (uspořádání zleva doprava)"
+		},
+		{
+			"id": "vertikal",
+			"language": "CZ",
+			"value": "Karty umístěné svisle (shora dolů)"
+		},
+		{
+			"id": "APP_TITLE",
+			"language": "BS",
+			"value": "Jednostavan redoslijed"
+		},
+		{
+			"id": "APP_DESCRIPTION",
+			"language": "BS",
+			"value": "Sa ovim templateom tekst, slike, audio ili video moraju biti poredani po redoslijedu."
+		},
+		{
+			"id": "anzeige",
+			"language": "BS",
+			"value": "Prikazati elemente"
+		},
+		{
+			"id": "vertikal",
+			"language": "BS",
+			"value": "Karte su fiksirane vertikalno (odozgo prema dolje)"
+		},
+		{
+			"id": "Karte",
+			"language": "BS",
+			"value": "Karta"
+		},
+		{
+			"id": "horizontal",
+			"language": "BS",
+			"value": "Karte su fiksirane horizontalno (s lijeva na desno)"
+		},
+		{
+			"id": "Karten",
+			"language": "BS",
+			"value": "Karte"
+		},
+		{
+			"id": "KartenBeschreibung",
+			"language": "BS",
+			"value": "Poredaj karte ispravno. Ovaj raspored karata je ispravno rješenje."
+		},
+		{
+			"id": "anzeigeBeschreibung",
+			"language": "BS",
+			"value": "Prikazati na kji način će se elementi prikazati"
+		},
+		{
+			"id": "frei",
+			"language": "BS",
+			"value": "Karte su slobodno poredane (od gornjeg lijevog do donjeg desnog ugla)"
+		},
+		{
+			"id": "anzeige",
+			"language": "PL",
+			"value": "Wyświetlanie kart"
+		},
+		{
+			"id": "anzeigeBeschreibung",
+			"language": "PL",
+			"value": "Wybierz sposób wyświetlania kart."
+		},
+		{
+			"id": "frei",
+			"language": "PL",
+			"value": "Karty rozmieszczone dowolnie (kolejność od górnego lewego rogu do dolnego prawego rogu)"
+		},
+		{
+			"id": "horizontal",
+			"language": "PL",
+			"value": "Karty rozmieszczone poziomo (kolejność od lewej do prawej)"
+		},
+		{
+			"id": "vertikal",
+			"language": "PL",
+			"value": "Karty rozmieszczone pionowo (kolejność od góry do dołu)"
+		},
+		{
+			"id": "Karte",
+			"language": "RO",
+			"value": "card"
+		},
+		{
+			"id": "Karten",
+			"language": "RO",
+			"value": "carduri"
+		},
+		{
+			"id": "anzeige",
+			"language": "RO",
+			"value": "Afișează elemente"
+		},
+		{
+			"id": "APP_TITLE",
+			"language": "RO",
+			"value": "Ordine simplă"
+		},
+		{
+			"id": "APP_DESCRIPTION",
+			"language": "RO",
+			"value": "Cu acest șablon textele, imaginile, audio-urile sau video-urile trebuie aduse într-o ordine simplă."
+		},
+		{
+			"id": "anzeigeBeschreibung",
+			"language": "RO",
+			"value": "Alegeți în ce mod să fie afișate elementele"
+		},
+		{
+			"id": "vertikal",
+			"language": "RO",
+			"value": "Cartonașe plaste fix vertical (ordonare de sus spre jos)"
+		},
+		{
+			"id": "frei",
+			"language": "RO",
+			"value": "Cartonașe plasate liber (Ordonarea de la stânga sus la dreapta jos)"
+		},
+		{
+			"id": "horizontal",
+			"language": "RO",
+			"value": "Cartonașe plasate fix orizontal (ordonare de la stânga la dreapta)"
+		},
+		{
+			"id": "KartenBeschreibung",
+			"language": "RO",
+			"value": "Specificați elemenlele care urmează să fie plasate în ordinea listată. Ordinea dată aici în formular reprezintă, de asemenea, soluția corectă."
+		},
+		{
+			"id": "hideNum",
+			"language": "RU",
+			"value": "Скрыть номера"
+		},
+		{
+			"id": "hideNumBeschreibung",
+			"language": "RU",
+			"value": "Числа от 1 до N автоматически отображаются на карточках. Они могут быть скрыты по запросу."
+		},
+		{
+			"id": "anzeige",
+			"language": "RU",
+			"value": "Отображение элементов"
+		},
+		{
+			"id": "anzeigeBeschreibung",
+			"language": "RU",
+			"value": "Выберите способ отображения элементов."
+		},
+		{
+			"id": "Karte",
+			"language": "RU",
+			"value": "Карточка"
+		},
+		{
+			"id": "Karten",
+			"language": "RU",
+			"value": "Карточки"
+		},
+		{
+			"id": "frei",
+			"language": "RU",
+			"value": "Карточки размещены свободно (расположение с верхнего левого края до нижнего левого)"
+		},
+		{
+			"id": "horizontal",
+			"language": "RU",
+			"value": "Карточки размещены горизонтально (слева направо)"
+		},
+		{
+			"id": "vertikal",
+			"language": "RU",
+			"value": "Карточки размещены вертикально (сверху вниз)"
+		},
+		{
+			"id": "KartenBeschreibung",
+			"language": "RU",
+			"value": "Укажите карточки, которые нужно расставить в нужном порядке. Используемый здесь порядок будет являться правильным решением."
+		},
+		{
+			"id": "APP_DESCRIPTION",
+			"language": "ES",
+			"value": "La actividad consiste en ordenar textos, imágenes, documentos audivisuales."
+		},
+		{
+			"id": "APP_TITLE",
+			"language": "ES",
+			"value": "Ordenar"
+		},
+		{
+			"id": "anzeigeBeschreibung",
+			"language": "ES",
+			"value": "Elige la forma en que se mostrarán los elementos."
+		},
+		{
+			"id": "hideNumBeschreibung",
+			"language": "ES",
+			"value": "En las tarjetas se muestran automáticamente números. Si lo deseas puedes ocultarlos."
+		},
+		{
+			"id": "horizontal",
+			"language": "ES",
+			"value": "Situar los elementos horizontalmente (dirección: de derecha a izquierda)"
+		},
+		{
+			"id": "vertikal",
+			"language": "ES",
+			"value": "Situar los elementos verticalmente (dirección: de arriba a abajo)"
+		},
+		{
+			"id": "Karte",
+			"language": "ES",
+			"value": "Tarjeta"
+		},
+		{
+			"id": "hideNum",
+			"language": "ES",
+			"value": "Ocultar los números"
+		},
+		{
+			"id": "frei",
+			"language": "ES",
+			"value": "Situar los elementos libremente (dirección: de arriba a la izquierda a abajo a la derecha)"
+		},
+		{
+			"id": "KartenBeschreibung",
+			"language": "ES",
+			"value": "Especifique los elementos que deben colocarse en el orden dado. El orden dado aquí en el formulario también representa la solución correcta."
+		},
+		{
+			"id": "anzeige",
+			"language": "ES",
+			"value": "Mostrar los elementos"
+		},
+		{
+			"id": "Karten",
+			"language": "ES",
+			"value": "Tarjetas"
+		},
+		{
+			"id": "FeedbackBeschreibung",
+			"language": "ES",
+			"value": "Añade un texto que se mostrará cuando las respuestas sean correctas."
+		},
+		{
+			"id": "hideNum",
+			"language": "PL",
+			"value": "Ukryj liczby"
+		},
+		{
+			"id": "hideNumBeschreibung",
+			"language": "PL",
+			"value": "Liczby małe od 1 do n są automatycznie wyświetlane na kartach. Na życzenie można je ukryć."
+		},
+		{
+			"id": "hideNum",
+			"language": "HU",
+			"value": "Számok elrejtése"
+		},
+		{
+			"id": "hideNumBeschreibung",
+			"language": "HU",
+			"value": "A kártyákon - automatikusan - 1-től n-ig terjedő kis számok jelennek meg. Ezek kérésre elrejthetők."
+		},
+		{
+			"id": "hideNumBeschreibung",
+			"language": "TR",
+			"value": "Kartlarda otomatik olarak küçük rakamlar yansıtılmaktadır. Bunlar isteğe bağlı olarak gizlene bilmektedir."
+		},
+		{
+			"id": "hideNum",
+			"language": "TR",
+			"value": "Sayıları gizle"
+		},
+		{
+			"id": "hideNum",
+			"language": "IT",
+			"value": "Nascondi i numeri"
+		},
+		{
+			"id": "hideNumBeschreibung",
+			"language": "IT",
+			"value": "I piccoli numeri da 1 a n vengono visualizzati automaticamente sulle carte. Questi possono essere nascosti se lo si desidera."
+		},
+		{
+			"id": "hideNum",
+			"language": "FR",
+			"value": "Masquer les chiffres"
+		},
+		{
+			"id": "hideNumBeschreibung",
+			"language": "FR",
+			"value": "Sur les cartes il y a automatiquement des petits chiffres de 1 à n. Ils peuvent être masqués si souhaité."
+		},
+		{
+			"id": "APP_TITLE",
+			"language": "LT",
+			"value": "Išrikiuoti eilės tvarka"
+		},
+		{
+			"id": "APP_DESCRIPTION",
+			"language": "LT",
+			"value": "Pagal šį šabloną, tekstai, vaizdai, garso ir vaizdo įrašai turi būti išrikiuoti teisinga eilės tvarka."
+		},
+		{
+			"id": "anzeige",
+			"language": "LT",
+			"value": "Rodyti elementus"
+		},
+		{
+			"id": "hideNum",
+			"language": "LT",
+			"value": "Paslėpti numerius"
+		},
+		{
+			"id": "anzeigeBeschreibung",
+			"language": "LT",
+			"value": "Pasirinkti, kaip elementai bus rodomi."
+		},
+		{
+			"id": "Prüfen",
+			"language": "LT",
+			"value": "Patikrinti sprendimą"
+		},
+		{
+			"id": "vertikal",
+			"language": "LT",
+			"value": "Kortelės išdėliotos vertikaliai (išrikiuoti nuo viršaus iki apačios)"
+		},
+		{
+			"id": "Karte",
+			"language": "LT",
+			"value": "Kortelė"
+		},
+		{
+			"id": "Karten",
+			"language": "LT",
+			"value": "Kortelės"
+		},
+		{
+			"id": "hideNumBeschreibung",
+			"language": "LT",
+			"value": "Maži numeriai nuo 1 iki n yra automatiškai rodomi ant kortelių. Jie gali būti paslėpti."
+		},
+		{
+			"id": "frei",
+			"language": "LT",
+			"value": "Kortelės išdėliotos bet kur (reikia jas išrikiuoti nuo viršutinio kairiojo iki apatinio dešiniojo kapo)"
+		},
+		{
+			"id": "KartenBeschreibung",
+			"language": "LT",
+			"value": "Pateikite korteles, kurios turės būti išrikiuotos. Čia pateikiama tvarka bus teisingas sprendimas."
+		},
+		{
+			"id": "horizontal",
+			"language": "LT",
+			"value": "Kortelės išdėliotos horizontaliai (išrikiuoti nuo kairės iki dešinės)"
+		},
+		{
+			"id": "Feedback",
+			"language": "LT",
+			"value": "Grįžtamasis ryšys"
+		},
+		{
+			"id": "FeedbackValue",
+			"language": "LT",
+			"value": "Puiku, išsprendei teisingai!"
+		},
+		{
+			"id": "FeedbackBeschreibung",
+			"language": "LT",
+			"value": "Įrašykite grįžtamojo ryšio tekstą, kurios bus rodomas teisingai išsprendus užduotį."
+		},
+		{
+			"id": "hideNum",
+			"language": "RO",
+			"value": "Ascunde numere"
+		},
+		{
+			"id": "hideNumBeschreibung",
+			"language": "RO",
+			"value": "Numerele mici de la 1 la n sunt afișate automat pe carduri. Acestea pot fi ascunse la cerere."
+		},
+		{
+			"id": "hideNum",
+			"language": "GR",
+			"value": "Απόκρυψη αριθμών"
+		},
+		{
+			"id": "anzeige",
+			"language": "GR",
+			"value": "Εμφάνιση στοιχείων"
+		},
+		{
+			"id": "hideNumBeschreibung",
+			"language": "GR",
+			"value": "Οι μικροί αριθμοί από το 1 έως το n εμφανίζονται αυτόματα στις κάρτες. Αυτοί μπορούν να κρυφτούν αν θέλετε."
+		},
+		{
+			"id": "APP_TITLE",
+			"language": "GR",
+			"value": "Βάλτα στη σωστή σειρά"
+		},
+		{
+			"id": "anzeigeBeschreibung",
+			"language": "GR",
+			"value": "Επιλέξτε πώς θέλετε να εμφανίζονται τα στοιχεία."
+		},
+		{
+			"id": "vertikal",
+			"language": "GR",
+			"value": "Οι κάρτες τοποθετούνται σταθερά κάθετα (διάταξη από πάνω προς τα κάτω)"
+		},
+		{
+			"id": "frei",
+			"language": "GR",
+			"value": "Οι κάρτες είναι ελεύθερα τοποθετημένες (διάταξη από πάνω αριστερά προς τα κάτω δεξιά)"
+		},
+		{
+			"id": "horizontal",
+			"language": "GR",
+			"value": "Οι κάρτες είναι σταθερά τοποθετημένες οριζόντια (διάταξη από αριστερά προς τα δεξιά)"
+		},
+		{
+			"id": "Karten",
+			"language": "GR",
+			"value": "Κάρτες"
+		},
+		{
+			"id": "KartenBeschreibung",
+			"language": "GR",
+			"value": "Καθορίστε τα στοιχεία που θα τοποθετηθούν με τη σειρά που φαίνεται. Η σειρά που δίνεται εδώ στη φόρμα είναι επίσης η σωστή λύση."
+		},
+		{
+			"id": "FeedbackBeschreibung",
+			"language": "GR",
+			"value": "Εισαγάγετε ένα κείμενο που θα εμφανίζεται όταν βρεθεί η σωστή λύση."
+		},
+		{
+			"id": "APP_DESCRIPTION",
+			"language": "GR",
+			"value": "Με αυτό το πρότυπο, τα κείμενα, οι εικόνες, οι ήχοι ή τα βίντεο πρέπει να ταξινομηθούν με απλή σειρά."
+		},
+		{
+			"id": "Karte",
+			"language": "GR",
+			"value": "Κάρτα"
+		},
+		{
+			"id": "APP_TITLE",
+			"language": "NL",
+			"value": "Eenvoudige volgorde"
+		},
+		{
+			"id": "APP_DESCRIPTION",
+			"language": "NL",
+			"value": "Met dit sjabloon moeten teksten, afbeeldingen, audio of video's in een eenvoudige volgorde worden gerangschikt."
+		},
+		{
+			"id": "hideNum",
+			"language": "NL",
+			"value": "Verberg nummers"
+		},
+		{
+			"id": "hideNumBeschreibung",
+			"language": "NL",
+			"value": "Kleine getallen van 1 tot n worden automatisch weergegeven op de kaarten. Deze kunnen desgewenst worden verborgen."
+		},
+		{
+			"id": "anzeige",
+			"language": "NL",
+			"value": "Items weergeven"
+		},
+		{
+			"id": "anzeigeBeschreibung",
+			"language": "NL",
+			"value": "Kies hoe u wilt dat de items worden weergegeven."
+		},
+		{
+			"id": "frei",
+			"language": "NL",
+			"value": "Kaarten vrij geplaatst (rangschikking van linksboven naar rechtsonder)"
+		},
+		{
+			"id": "horizontal",
+			"language": "NL",
+			"value": "Kaarten vast horizontaal geplaatst (rangschikking van links naar rechts)"
+		},
+		{
+			"id": "vertikal",
+			"language": "NL",
+			"value": "Kaarten vast verticaal geplaatst (rangschikking van boven naar beneden)"
+		},
+		{
+			"id": "Karte",
+			"language": "NL",
+			"value": "Kaart"
+		},
+		{
+			"id": "Karten",
+			"language": "NL",
+			"value": "Kaarten"
+		},
+		{
+			"id": "KartenBeschreibung",
+			"language": "NL",
+			"value": "Geef de te plaatsen items hier op in de juiste volgorde. De volgorde die hier in het formulier staat is ook de juiste oplossing."
+		}
+	],
+	"path": "https://learningapps.org/tools/70/26/",
+	"version": "26"
+};
